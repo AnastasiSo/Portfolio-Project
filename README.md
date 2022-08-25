@@ -3,7 +3,7 @@ Goal:
 1. Create web application for displaying Frontend developer’s portfolio (code examples) from scratch.
 2. Improve skills in Frontend and Backend development. 
 
-- Frontend developer/UX designer
+Frontend developer/UX designer
 
 - Creating design
 - Implementation client part
