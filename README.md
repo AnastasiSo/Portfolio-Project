@@ -3,7 +3,7 @@ Goal:
 1. Create web application for displaying Frontend developer’s portfolio (code examples) from scratch.
 2. Improve skills in Frontend and Backend development. 
 
-Frontend developer/UX designer
+Frontend developer/UX designer [@AnastasiiaSorina](https://github.com/AnastasiiaSorina)
 
 - Creating design
 - Implementation client part
@@ -11,7 +11,7 @@ Frontend developer/UX designer
 - QA
 - Manage repository
 
-Architect/Backend developer
+Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
 
 - Creating project structure
 - Implementation server part
