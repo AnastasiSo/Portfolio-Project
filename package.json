@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Goal: 1. Create web application for displaying Frontend developer’s portfolio (code examples) from scratch. 2. Improve skills in Frontend and Backend development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaSorina/Portfolio-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaSorina/Portfolio-Project/issues"
+  },
+  "homepage": "https://github.com/AnastasiiaSorina/Portfolio-Project#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "path": "^0.12.7",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
