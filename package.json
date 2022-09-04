@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/AnastasiiaSorina/Portfolio-Project#readme",
   "devDependencies": {
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
     "eslint": "^8.23.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
