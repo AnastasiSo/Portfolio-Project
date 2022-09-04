@@ -6,11 +6,11 @@ module.exports = {
   mode: "development",
   module: {
     rules: [
-      // {
-      //     test: /\.[jt]sx?$/,
-      //     use: ['babel-loader'],
-      //     exclude: /node_modules/,
-      // },
+      {
+        test: /\.[jt]sx?$/,
+        use: ["babel-loader"],
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/index.html"),
+      template: path.resolve(__dirname, "./public/index.html"),
     }),
   ],
   devServer: {
