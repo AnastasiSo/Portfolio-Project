@@ -1,7 +1,9 @@
 # Portfolio-Project
+
 Goal:
+
 1. Create web application for displaying Frontend developer’s portfolio (code examples) from scratch.
-2. Improve skills in Frontend and Backend development. 
+2. Improve skills in Frontend and Backend development.
 
 Frontend developer/UX designer [@AnastasiiaSorina](https://github.com/AnastasiiaSorina)
 
@@ -19,3 +21,6 @@ Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
 - CI
 - Testing
 - Deployment to Heroku
+
+To run app use
+`npm run start`
