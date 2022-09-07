@@ -1,5 +1,35 @@
 // Base styles
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-family: $font-family-regular;
+}
+
+img {
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
