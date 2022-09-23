@@ -11,3 +11,20 @@
     padding: 0 $layout-padding-lg;
   }
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: none;
+}
+
+.column {
+  flex: none;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &.a-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
