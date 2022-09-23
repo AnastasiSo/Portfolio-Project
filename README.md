@@ -23,4 +23,4 @@ Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
 - Deployment to Heroku
 
 To run app use
-`npm run start`
+`npm run dev`

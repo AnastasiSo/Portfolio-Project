@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  max-width: $layout-max-width;
+  margin: 0 auto;
+  padding: 0 $layout-padding-sm;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 $layout-padding-md;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $layout-padding-lg;
+  }
+}
