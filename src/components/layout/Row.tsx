@@ -9,4 +9,4 @@ interface IRowProps {
 const Row: FunctionComponent<IRowProps> = ({ children, className }) => {
   return <div className={`row ${className ? className : ""}`}>{children}</div>;
 };
-export { Row };
+export default Row;
