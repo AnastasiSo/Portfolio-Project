@@ -79,4 +79,4 @@ Column.defaultProps = {
   center: false,
 };
 
-export { Column };
+export default Column;
