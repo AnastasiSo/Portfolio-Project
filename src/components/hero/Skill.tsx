@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-const Skills: FunctionComponent = () => {
+const Skill: FunctionComponent = () => {
   return (
     <div>
       <ul className="ball">
@@ -11,4 +11,4 @@ const Skills: FunctionComponent = () => {
   );
 };
 
-export default Skills;
+export default Skill;

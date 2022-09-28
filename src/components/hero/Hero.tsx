@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
-import Skills from "./Skills";
+import Skill from "./Skill";
 
 const Hero: FunctionComponent = () => {
-  return <Skills></Skills>;
+  return <Skill></Skill>;
 };
 
 export default Hero;
