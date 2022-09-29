@@ -2,9 +2,10 @@ import { FunctionComponent } from "react";
 const Skill: FunctionComponent = () => {
   return (
     <div>
+      <h2>Soft Skills</h2>
       <ul className="ball">
         <li>
-          <span>ghj</span>
+          <span>Attention to details</span>
         </li>
       </ul>
     </div>
