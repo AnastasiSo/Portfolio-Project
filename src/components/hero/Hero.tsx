@@ -8,13 +8,13 @@ const Hero: FunctionComponent = () => {
   return (
     <Container>
       <Row>
-        <Column>
+        <Column size={3}>
           <Skill />
         </Column>
-        <Column>
+        <Column size={6} center>
           <span>Foto</span>
         </Column>
-        <Column>
+        <Column size={3}>
           <Skill />
         </Column>
       </Row>
