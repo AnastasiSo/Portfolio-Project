@@ -10,7 +10,7 @@ const SkillsGroup: FunctionComponent<ISkillsGroupProps> = ({
   return (
     <div>
       <h2>{title}</h2>
-      <ul className="ball">
+      <ul className="skills-list">
         {skills.map((item, index) => (
           <li key={index}>
             <span>{item}</span>
