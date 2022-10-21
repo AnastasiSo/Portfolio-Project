@@ -15,7 +15,9 @@ const Hero: FunctionComponent = () => {
           <SkillsGroup title="Soft Skills" skills={softSkills} />
         </Column>
         <Column size={6} center>
-          <span>Foto</span>
+          <span>
+            <img src="./../img/foto.png" />
+          </span>
         </Column>
         <Column size={3}>
           <SkillsGroup title="Hard Skills" skills={hardSkills} />
