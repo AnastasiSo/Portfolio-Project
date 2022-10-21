@@ -12,13 +12,13 @@ const Hero: FunctionComponent = () => {
     <Container>
       <Row>
         <Column size={3}>
-          <SkillsGroup title="Soft Skills" skills={softSkills} />
+          <SkillsGroup title="Soft " skills={softSkills} />
         </Column>
         <Column size={6} center>
           <span>Foto</span>
         </Column>
         <Column size={3}>
-          <SkillsGroup title="Hard Skills" skills={hardSkills} />
+          <SkillsGroup title="<Hard /> " skills={hardSkills} />
         </Column>
       </Row>
     </Container>
