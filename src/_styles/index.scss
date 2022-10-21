@@ -3,10 +3,4 @@
 @import "hero";
 @import "layout";
 @import "skill";
-
-.header {
-  background: url("./../img/header.png") no-repeat top center;
-  height: 400px;
-  width: 100%;
-  opacity: 0.9;
-}
+@import "main";
