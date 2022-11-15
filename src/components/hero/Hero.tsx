@@ -16,7 +16,7 @@ const Hero: FunctionComponent = () => {
         </Column>
         <Column size={6} center>
           <span>
-            <img src="./../img/foto.png" />
+            <img className="header-avatar" src="./../img/foto.png" />
           </span>
         </Column>
         <Column size={3}>
