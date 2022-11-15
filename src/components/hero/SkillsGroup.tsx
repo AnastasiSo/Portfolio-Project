@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+
 interface ISkillsGroupProps {
   title: string;
   skills: string[];
@@ -9,7 +10,9 @@ const SkillsGroup: FunctionComponent<ISkillsGroupProps> = ({
 }) => {
   return (
     <div>
-      <h2>{title}</h2>
+      <h2>
+        {title} <span>Skills</span>
+      </h2>
       <ul className="skills-list">
         {skills.map((item, index) => (
           <li key={index}>
