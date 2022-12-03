@@ -1,9 +1,9 @@
+import SkillsGroup from "@components/hero/SkillsGroup";
+import Column from "@components/layout/Column";
+import Container from "@components/layout/Container";
+import Row from "@components/layout/Row";
 import { FunctionComponent } from "react";
 // import imageToAdd from "../assets/header.png";
-import Column from "../layout/Column";
-import Container from "../layout/Container";
-import Row from "../layout/Row";
-import SkillsGroup from "./SkillsGroup";
 
 const Hero: FunctionComponent = () => {
   const softSkills = ["hi"];
