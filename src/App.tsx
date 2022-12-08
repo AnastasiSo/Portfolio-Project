@@ -1,9 +1,15 @@
 import "../src/_styles/index.scss";
-
+import Menu from "./components/Menu";
 const App = () => {
   return (
     <div>
-      {/* <Menu />
+      <Menu />
+    </div>
+  );
+};
+
+{
+  /* <Menu />
       <Hero>
         <SocialMedia />
       </Hero>
@@ -16,9 +22,6 @@ const App = () => {
         <Rest />
       </Projects>
       <Contacts />
-      <Footer /> */}
-    </div>
-  );
-};
-
+      <Footer /> */
+}
 export default App;
