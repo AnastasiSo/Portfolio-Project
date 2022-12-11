@@ -29,6 +29,6 @@
       "@components/*": ["src/components/*"]
     }
   },
-  "include": ["typings", "src"],
+  "include": ["src/custom.d.ts", "src"],
   "exclude": ["node_modules", "dist"] // *** The files to not type check ***
 }
