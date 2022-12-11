@@ -1,5 +1,3 @@
-@use "sass:math";
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -11,25 +9,24 @@
   display: flex;
   flex-wrap: wrap;
 
-  flex: none;
-  margin: 0 -$layout-margin;
+  flex: none; // ?
 }
 
 @media (min-width: $breakpoint-sm) {
   .container {
     padding: 0 $layout-padding-sm;
   }
+}
 
-  .row {
-    margin-left: -(math.div($layout-spacing, 2));
-    margin-right: -(math.div($layout-spacing, 2));
+@media (min-width: $breakpoint-md) {
+  .container {
+    padding: 0 $layout-padding-md;
   }
 }
 
 @media (min-width: $breakpoint-lg) {
   .container {
-    padding-left: $layout-margin-lg;
-    padding-right: $layout-margin-lg;
+    padding: 0 $layout-padding-lg;
   }
 }
 
@@ -42,7 +39,7 @@
   }
 
   @for $i from 1 through $grid-columns {
-    .column-#{$i} {
+    &.column-#{$i} {
       width: percentage(math.div($i, $grid-columns));
     }
   }
@@ -53,7 +50,7 @@
     padding-right: math.div($layout-spacing, 2);
 
     @for $i from 1 through $grid-columns {
-      .column-sm-#{$i} {
+      &.column-sm-#{$i} {
         width: percentage(math.div($i, $grid-columns));
       }
     }
@@ -62,7 +59,7 @@
   // Column defs for MD size (MD breakpoint and up)
   @media (min-width: $breakpoint-md) {
     @for $i from 1 through $grid-columns {
-      .column-md-#{$i} {
+      &.column-md-#{$i} {
         width: percentage(math.div($i, $grid-columns));
       }
     }
@@ -71,7 +68,7 @@
   // Column defs for LG size (LG breakpoint and up)
   @media (min-width: $breakpoint-lg) {
     @for $i from 1 through $grid-columns {
-      .column-lg-#{$i} {
+      &.column-lg-#{$i} {
         width: percentage(math.div($i, $grid-columns));
       }
     }
