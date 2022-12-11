@@ -4,6 +4,8 @@ const App = () => {
   return (
     <div>
       <Menu />
+      {/* Test code */}
+      <img src={require("@public/assets/car.jpg").default} />
     </div>
   );
 };
