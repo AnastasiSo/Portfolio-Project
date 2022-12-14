@@ -2,4 +2,30 @@
   background: $grey;
   height: 100px;
   width: 100px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  background: rgb(37, 37, 37);
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+
+  &-item {
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 14px;
+    }
+  }
 }

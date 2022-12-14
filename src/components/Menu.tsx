@@ -1,7 +1,5 @@
 import "../_styles/index.scss";
 
-import "../_styles/index.scss";
-
 import { FunctionComponent } from "react";
 import Column from "./layout/Column";
 import Container from "./layout/Container";
@@ -13,14 +11,21 @@ const Menu: FunctionComponent = () => {
   return (
     <Container>
       <Row>
-        <Column size={2}>
+        <Column size={6}>
           <div className="logo"></div>
         </Column>
-        <Column size={10}>
+        <Column size={6}>
           <ul className="menu">
             {menuItems.map((item, index) => (
-              <li key={index} className="menu-item">
-                <span>{item}</span>
+              <li
+                key={index}
+                className={`menu-items ${
+                  index === menuItems.length - 1 ? "resume" : ""
+                }`}
+              >
+                <a>
+                  <span>{item}</span>
+                </a>
               </li>
             ))}
           </ul>
