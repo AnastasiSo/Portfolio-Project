@@ -11,10 +11,10 @@ const Menu: FunctionComponent = () => {
   return (
     <Container>
       <Row>
-        <Column size={6}>
+        <Column size={4}>
           <div className="logo"></div>
         </Column>
-        <Column size={6}>
+        <Column size={8}>
           <ul className="menu">
             {menuItems.map((item, index) => (
               <li

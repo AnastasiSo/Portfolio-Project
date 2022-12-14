@@ -1,31 +1,36 @@
 .logo {
   background: $grey;
-  height: 100px;
-  width: 100px;
+  height: 25px;
+  width: 25px;
   position: absolute;
-  text-align: center;
-  top: 0;
-  background: rgb(37, 37, 37);
 }
 
 .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: $size-unit * 6; // 24px
 
-  .menu-item {
+  .menu-items {
     align-items: center;
     display: flex;
-    margin-right: 12px;
     cursor: pointer;
-
+    align-content: center;
+    padding: $size-unit * 3 $size-unit * 10; // 12px 40px
+    &:hover {
+      border-bottom: $border-unit solid #224a54; //$dark-blue
+    }
+    // TODO: Add slow text animation for .menu-items
     a {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: black;
-      font-size: 16px;
+      color: #224a54; //$dark-blue
+      font-size: $size-unit * 4; // 16px
     }
+  }
+
+  .resume {
+    border: $border-unit solid #224a54; //$dark-blue
   }
 }
