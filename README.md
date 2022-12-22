@@ -22,7 +22,7 @@ Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
 - Testing
 - Deployment to Heroku
 
-UX/UI designer
+UX/UI designer [@Anastasia](https://github.com/NaYaFit)
 
 - Creating main design of site
 - Layout for mobile/tablet/desktop
