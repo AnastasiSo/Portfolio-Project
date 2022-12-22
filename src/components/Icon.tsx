@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import ICON_TYPES from "../icon/constants";
+import ICON_TYPES from "./icon/constants";
 
 type IconType = keyof typeof ICON_TYPES;
 
