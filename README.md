@@ -5,9 +5,9 @@ Goal:
 1. Create web application for displaying Frontend developer’s portfolio (code examples) from scratch.
 2. Improve skills in Frontend and Backend development.
 
-Frontend developer/UX designer [@AnastasiiaSorina](https://github.com/AnastasiiaSorina)
+Frontend developer/Product Owner [@AnastasiiaSorina](https://github.com/AnastasiiaSorina)
 
-- Creating design
+- Establish design
 - Implementation client part
 - API
 - QA
@@ -21,6 +21,12 @@ Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
 - CI
 - Testing
 - Deployment to Heroku
+
+UX/UI designer [@Anastasia](https://github.com/NaYaFit)
+
+- Creating main design of site
+- Layout for mobile/tablet/desktop
+- Behavioral states
 
 To run app use
 `npm run dev`
