@@ -1,7 +1,7 @@
 .logo {
-  background: $grey;
-  height: 25px;
-  width: 25px;
+  background: $grey-60;
+  height: $size-unit * 6; // 24px
+  width: $size-unit * 6; // 24px
   position: absolute;
 }
 
@@ -18,19 +18,19 @@
     align-content: center;
     padding: $size-unit * 3 $size-unit * 7; // 12px 28px
     &:hover {
-      border-bottom: $border-unit solid #224a54; //$dark-blue
+      border-bottom: $border-unit solid $dark-blue;
     }
     // TODO: Add slow text animation for .menu-items
     a {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #224a54; //$dark-blue
+      color: $dark-blue;
       font-size: $size-unit * 4; // 16px
     }
   }
 
   .resume {
-    border: $border-unit solid #224a54; //$dark-blue
+    border: $border-unit solid $dark-blue;
   }
 }
