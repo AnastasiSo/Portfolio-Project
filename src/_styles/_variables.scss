@@ -5,6 +5,18 @@ $layout-padding-sm: 16px;
 $layout-padding-md: 40px;
 $layout-padding-lg: 80px;
 
+// Layout spacing
+$layout-margin: 16px;
+$layout-spacing: 28px; //$layout-spacing
+
+// SM and up (> 576px)
+$layout-margin-sm: 38px;
+$layout-spacing-sm: 28px; //$layout-spacing
+
+// LG and up (> 992px)
+$layout-margin-lg: 48px;
+$layout-spacing-lg: 28px; //$layout-spacing
+
 // Layout breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;

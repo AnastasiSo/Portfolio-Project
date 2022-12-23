@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.tsx"),
   mode: "development",
+  output: {
+    publicPath: "/",
+  },
   module: {
     rules: [
       {
@@ -18,6 +21,18 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+              encoding: false,
+            },
+          },
+        ],
       },
     ],
   },

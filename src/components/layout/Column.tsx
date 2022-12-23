@@ -64,7 +64,6 @@ const Column: FunctionComponent<IColumnProps> = ({
       modifiersClassName += ` column-lg-${realSizeLG}`;
     }
   }
-
   return (
     <div
       className={` column ${modifiersClassName} ${className ? className : ""}`}
