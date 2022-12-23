@@ -23,14 +23,37 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1200px;
 
 // Colors
-$black: #292929;
-$white: #ffffff;
-$grey: #8b8b8b;
+$black: #282828;
 
-$red: #ff5757;
-$yellow: #ffde59;
-$turquoise: #5ce1e6;
-$violet: #9e7fe6;
+$grey-60: #3c3c3c;
+$grey-40: #737373;
+$grey-20: #969696;
+
+$white-60: rgba(217, 217, 217, 0.6);
+$white: #f5f9fa;
+
+$dark-blue: #224a54;
+$dark-blue-60: #4e6e76;
+$dark-blue-40: #7a9298;
+$dark-blue-20: #a7b7bb;
+
+$blue: #98bec8;
+$blue-80: #bad8e0;
+$blue-60: #c8e0e6;
+$blue-40: #d6e8ec;
+$blue-20: #e3eff3;
+
+$green: #3bab87;
+$green-60: #62bc9f;
+$green-40: #89cdb7;
+$green-20: #b1ddcf;
+
+$pink: #e9c4b9;
+$pink-60: #edcfc6;
+$pink-40: #f2dbd4;
+$pink-20: #f6e7e3;
+
+$light-pink: #fdf0ec;
 
 // Sizes
 $border-unit: 1px;
