@@ -16,7 +16,7 @@
     display: flex;
     cursor: pointer;
     align-content: center;
-    padding: $size-unit * 3 $size-unit * 10; // 12px 40px
+    padding: $size-unit * 3 $size-unit * 7; // 12px 28px
     &:hover {
       border-bottom: $border-unit solid #224a54; //$dark-blue
     }
