@@ -1,36 +1,82 @@
 .logo {
-  background: $grey-60;
-  height: $size-unit * 6; // 24px
-  width: $size-unit * 6; // 24px
-  position: absolute;
+  display: flex;
+  .icon-logo {
+    margin-top: $size-unit * 6; // 24px
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+}
+.mobile-menu {
+  padding-top: $size-unit * 7; // 28px
+  & .mobile-menu-button {
+    display: flex;
+    justify-content: right;
+    color: $dark-blue;
+    font-size: $size-unit * 4; // 16px
+  }
+  @media (min-width: $breakpoint-sm) {
+    .mobile-menu-button,
+    .close-button {
+      display: none;
+    }
+    /* .close-button {
+      transition: all 0.3s ease 0s;
+    }
+    */
+  }
 }
 
-.menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: $size-unit * 6; // 24px
-
-  .menu-items {
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    align-content: center;
-    padding: $size-unit * 3 $size-unit * 7; // 12px 28px
-    &:hover {
-      border-bottom: $border-unit solid $dark-blue;
-    }
-    // TODO: Add slow text animation for .menu-items
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $dark-blue;
-      font-size: $size-unit * 4; // 16px
-    }
+.top-menu {
+  display: block;
+  /*  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    z-index: 2;
   }
+  flax defection column
+*/
+  .menu {
+    display: none;
+  }
+  @media (min-width: $breakpoint-sm) {
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-top: $size-unit * 6; // 24px
+      background-color: $white;
 
-  .resume {
-    border: $border-unit solid $dark-blue;
+      .menu-items {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        align-content: center;
+        padding-top: $size-unit * 3; // 12px
+        padding-bottom: $size-unit * 3; // 12px
+        &:hover {
+          border-bottom: $border-unit solid $dark-blue;
+        }
+        // TODO: Add slow text animation for .menu-items
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $dark-blue;
+          font-size: $size-unit * 4; // 16px
+        }
+      }
+
+      .resume {
+        border: $border-unit solid $dark-blue;
+        padding: $size-unit * 3 $size-unit * 7; // 12px 28px
+      }
+    }
   }
 }
