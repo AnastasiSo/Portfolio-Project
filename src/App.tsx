@@ -1,9 +1,11 @@
 import "../src/_styles/index.scss";
+import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 const App = () => {
   return (
     <div>
       <Menu />
+      <Hero />
     </div>
   );
 };

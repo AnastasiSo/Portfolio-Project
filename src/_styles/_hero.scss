@@ -1,0 +1,28 @@
+.hero {
+  margin-top: $size-unit * 5; // 20px
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  color: $dark-blue;
+}
+.site-description::before {
+  display: block;
+  width: $size-unit * 20; // 80px
+  border-top: $border-unit solid $dark-blue;
+  content: "";
+  margin-bottom: $size-unit * 4; // 16px
+}
+.site-description {
+  font-size: $font-size; // 14px
+  line-height: 172%;
+}
+.avatar {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  line-height: 18px;
+  width: 100%;
+  img {
+    width: $size-unit * 55; // 220px
+  }
+}

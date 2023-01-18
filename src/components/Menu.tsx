@@ -1,7 +1,5 @@
 import "../_styles/index.scss";
 
-import "../_styles/index.scss";
-
 import { FunctionComponent } from "react";
 import Column from "./layout/Column";
 import Container from "./layout/Container";
