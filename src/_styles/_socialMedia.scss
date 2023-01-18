@@ -1,0 +1,15 @@
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  .icon {
+    fill: $black-20;
+  }
+
+  .row {
+    flex-direction: column;
+
+    .column {
+      margin-top: $size-unit * 2; // 8px
+    }
+  }
+}
