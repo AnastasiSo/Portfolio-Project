@@ -1,22 +1,49 @@
-.logo {
-  display: flex;
-  .icon-logo {
-    margin-top: $size-unit * 6; // 24px
-    height: 24px;
-    overflow: hidden;
-    position: relative;
-    z-index: 3;
-  }
-}
-.mobile-menu {
-  padding-top: $size-unit * 7; // 28px
-  & .mobile-menu-button {
+.navigation {
+  margin-top: $size-unit * 7; // 28px
+
+  .logo-wrap {
     display: flex;
-    justify-content: right;
+    .logo {
+      display: flex;
+      .icon-logo {
+        height: $size-unit * 7; // 28px
+      }
+    }
+  }
+  .row {
+    justify-content: flex-start;
+    .column {
+      align-content: center;
+    }
+  }
+  .mobile-menu,
+  .top-menu {
+    display: flex;
     color: $dark-blue;
+    justify-content: flex-end;
     font-size: $size-unit * 4; // 16px
+    cursor: pointer;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    .menu {
+      display: none;
+    }
+    .logo {
+      align-items: flex-end;
+      padding-top: 21.5px; // TODO: margin?, found new wey
+    }
+    .mobile-menu-wrap {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
   }
   @media (min-width: $breakpoint-sm) {
+    .logo {
+      align-items: flex-end;
+      padding-bottom: $size-unit * 4; // 16px
+    }
     .mobile-menu-button,
     .close-button {
       display: none;
@@ -25,27 +52,6 @@
       transition: all 0.3s ease 0s;
     }
     */
-  }
-}
-
-.top-menu {
-  display: block;
-  /*  &:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $black;
-    z-index: 2;
-  }
-  flax defection column
-*/
-  .menu {
-    display: none;
-  }
-  @media (min-width: $breakpoint-sm) {
     .menu {
       width: 100%;
       display: flex;
@@ -56,10 +62,7 @@
       .menu-items {
         align-items: center;
         display: flex;
-        cursor: pointer;
         align-content: center;
-        padding-top: $size-unit * 3; // 12px
-        padding-bottom: $size-unit * 3; // 12px
         &:hover {
           border-bottom: $border-unit solid $dark-blue;
         }

@@ -5,22 +5,27 @@ import Column from "./layout/Column";
 import Container from "./layout/Container";
 import Row from "./layout/Row";
 
-// TODO: rename file to Navigation
 // TODO: 1.menu media query Sm, Md, Lg
 // TODO: 2.mobile menu functional
 
-const Menu: FunctionComponent = () => {
+const Navigation: FunctionComponent = () => {
   const menuItems = ["About", "Projects", "Contacts", "Resume"];
 
   return (
-    <Container>
+    <Container className="navigation">
       <Row>
-        <Column size={6} sizeSM={2} sizeLG={5}>
+        <Column size={6} sizeSM={5} sizeMD={5} sizeLG={5} className="logo-wrap">
           <a className="logo" href="#">
             <img src="../img/logo.png" className="icon-logo" />
           </a>
         </Column>
-        <Column size={6} sizeSM={10} sizeLG={7}>
+        <Column
+          size={6}
+          sizeSM={7}
+          sizeMD={7}
+          sizeLG={7}
+          className="mobile-menu-wrap"
+        >
           <div className="mobile-menu">
             <span className="mobile-menu-button">MENU</span>
             {/* <span className="close-button">close</span>  TODO: create 'close-button' component? */}
@@ -47,4 +52,4 @@ const Menu: FunctionComponent = () => {
   );
 };
 
-export default Menu;
+export default Navigation;

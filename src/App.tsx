@@ -1,9 +1,9 @@
 import "../src/_styles/index.scss";
-import Menu from "./components/Menu";
+import Navigation from "./components/Navigation";
 const App = () => {
   return (
     <div>
-      <Menu />
+      <Navigation />
     </div>
   );
 };
