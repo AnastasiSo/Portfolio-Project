@@ -1,0 +1,46 @@
+.menu-wrap {
+  display: flex;
+  justify-content: flex-end;
+  font-size: $size-unit * 4; // 16px
+  cursor: pointer;
+}
+.menu-items {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark-blue;
+    font-size: $size-unit * 4; // 16px
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .mobile-menu-wrap,
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: $breakpoint-sm) {
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: $size-unit * 6; // 24px
+    background-color: $white;
+
+    .menu-items {
+      align-items: center;
+      display: flex;
+      align-content: center;
+      &:hover {
+        border-bottom: $border-unit solid $dark-blue;
+      }
+      // TODO: Add slow text animation for .menu-items
+    }
+
+    .resume {
+      border: $border-unit solid $dark-blue;
+      padding: $size-unit * 3 $size-unit * 7; // 12px 28px
+    }
+  }
+}

@@ -16,70 +16,18 @@
       align-content: center;
     }
   }
-  .mobile-menu,
-  .top-menu {
-    display: flex;
-    color: $dark-blue;
-    justify-content: flex-end;
-    font-size: $size-unit * 4; // 16px
-    cursor: pointer;
-  }
 
   @media (max-width: $breakpoint-sm) {
-    .menu {
-      display: none;
-    }
     .logo {
       align-items: flex-end;
       padding-top: 21.5px; // TODO: margin?, found new wey
     }
-    .mobile-menu-wrap {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-    }
   }
+
   @media (min-width: $breakpoint-sm) {
     .logo {
       align-items: flex-end;
       padding-bottom: $size-unit * 4; // 16px
-    }
-    .mobile-menu-button,
-    .close-button {
-      display: none;
-    }
-    /* .close-button {
-      transition: all 0.3s ease 0s;
-    }
-    */
-    .menu {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding-top: $size-unit * 6; // 24px
-      background-color: $white;
-
-      .menu-items {
-        align-items: center;
-        display: flex;
-        align-content: center;
-        &:hover {
-          border-bottom: $border-unit solid $dark-blue;
-        }
-        // TODO: Add slow text animation for .menu-items
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: $dark-blue;
-          font-size: $size-unit * 4; // 16px
-        }
-      }
-
-      .resume {
-        border: $border-unit solid $dark-blue;
-        padding: $size-unit * 3 $size-unit * 7; // 12px 28px
-      }
     }
   }
 }
