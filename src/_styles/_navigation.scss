@@ -1,6 +1,9 @@
 .navigation {
   margin-top: $size-unit * 7; // 28px
-
+  .nav-menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
   .logo-wrap {
     display: flex;
     .logo {
@@ -8,26 +11,6 @@
       .icon-logo {
         height: $size-unit * 7; // 28px
       }
-    }
-  }
-  .row {
-    justify-content: flex-start;
-    .column {
-      align-content: center;
-    }
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    .logo {
-      align-items: flex-end;
-      padding-top: 21.5px; // TODO: margin?, found new wey
-    }
-  }
-
-  @media (min-width: $breakpoint-sm) {
-    .logo {
-      align-items: flex-end;
-      padding-bottom: $size-unit * 4; // 16px
     }
   }
 }

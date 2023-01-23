@@ -9,8 +9,8 @@ const Menu: FunctionComponent = () => {
   const menuItems = ["About", "Projects", "Contacts", "Resume"];
 
   return (
-    <nav className="menu-wrap">
-      <ul className="menu">
+    <nav className="menu">
+      <ul className="menu-wrap">
         {menuItems.map((item, index) => (
           <li
             key={index}

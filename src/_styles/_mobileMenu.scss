@@ -1,0 +1,27 @@
+.mobile-menu-button {
+  color: $dark-blue;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  .mobile-menu-close {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    & > .row {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+  @media (min-width: $breakpoint-sm) {
+    &,
+    & > .menu {
+      display: none;
+    }
+  }
+}
