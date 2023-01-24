@@ -1,15 +1,18 @@
 .social-media {
   display: flex;
-  justify-content: flex-end;
   .icon {
     fill: $black-20;
   }
 
   .row {
     flex-direction: column;
+    margin-top: 10px; // Delete this, after margin
 
     .column {
-      margin-top: $size-unit * 2; // 8px
+      margin-bottom: $size-unit * 5; // 20px
     }
+  }
+  @media (max-width: $breakpoint-sm) {
+    justify-content: flex-end;
   }
 }
