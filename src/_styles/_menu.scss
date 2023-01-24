@@ -6,18 +6,8 @@
   .menu-items {
     a {
       display: flex;
-      justify-content: center;
-      align-items: center;
       font-size: $size-unit * 4; // 16px
       cursor: pointer;
-    }
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    .menu-items {
-      a {
-        color: $white-10;
-      }
     }
   }
 
@@ -38,6 +28,7 @@
         }
         a {
           color: $dark-blue;
+          align-items: center;
         }
         // TODO: Add slow text animation for .menu-items
       }
