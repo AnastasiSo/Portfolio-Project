@@ -7,7 +7,7 @@
 
 .mobile-menu {
   @media (max-width: $breakpoint-sm) {
-    padding: 28px 16px;
+    padding: $size-unit * 7 $size-unit * 4; // 28px 16px
     position: fixed;
     top: 0;
     right: 0;
@@ -33,20 +33,16 @@
       }
     }
     .menu {
-      display: block;
       display: flex;
-
       .menu-wrap {
         margin-top: 2em;
         .menu-items {
           margin-bottom: 1em;
-          justify-content: space-between;
-          align-content: flex-start;
           .menu-link {
             font-size: 34px;
             font-weight: 600;
             color: $white-10;
-            span {
+            & > span {
               font-family: "Playfair Display";
             }
           }

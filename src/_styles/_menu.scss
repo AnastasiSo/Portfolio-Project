@@ -4,10 +4,8 @@
   display: none;
 
   .menu-items {
-    a {
+    .menu-link {
       display: flex;
-      font-size: $size-unit * 4; // 16px
-      cursor: pointer;
     }
   }
 
@@ -26,9 +24,10 @@
         &:hover {
           border-bottom: $border-unit solid $dark-blue;
         }
-        a {
+        .menu-link {
           color: $dark-blue;
           align-items: center;
+          cursor: pointer;
         }
         // TODO: Add slow text animation for .menu-items
       }
@@ -36,6 +35,15 @@
       .resume {
         border: $border-unit solid $dark-blue;
         padding: $size-unit * 3 $size-unit * 7; // 12px 28px
+
+        &:hover {
+          background-color: $dark-blue;
+          .menu-link {
+            & > span {
+              color: $white-10;
+            }
+          }
+        }
       }
     }
   }
