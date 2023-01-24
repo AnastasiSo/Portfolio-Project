@@ -6,8 +6,16 @@
 }
 
 .mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+
   .mobile-menu-close {
     display: none;
+    color: $white-10;
   }
 
   @media (max-width: $breakpoint-sm) {
@@ -16,6 +24,25 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+    }
+    .logo-wrap {
+      position: relative;
+      .logo {
+        position: absolute;
+        top: 28px;
+        left: 16px;
+      }
+    }
+    .mobile-menu-close {
+      position: absolute;
+      top: 34px;
+      right: 16px;
+      display: block;
+    }
+    .menu-item {
+      a {
+        color: $white-10;
+      }
     }
   }
   @media (min-width: $breakpoint-sm) {
