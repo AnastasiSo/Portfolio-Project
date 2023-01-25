@@ -1,9 +1,12 @@
 .social-media {
   display: flex;
   flex-direction: column;
-  margin-top: 10px; // Delete this, after margin
 
-  .column {
+  &.position-row {
+    flex-direction: row;
+  }
+
+  li {
     margin-bottom: $size-unit * 5; // 20px
 
     .icon {
@@ -11,8 +14,11 @@
       width: $size-unit * 4; // 16px
       height: $size-unit * 4; // 16px
     }
-  }
-  @media (max-width: $breakpoint-sm) {
-    justify-content: flex-end;
+
+    span {
+      margin-left: $size-unit * 11; // 44px
+      color: $dark-blue;
+      text-decoration-line: underline;
+    }
   }
 }

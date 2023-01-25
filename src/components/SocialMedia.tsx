@@ -1,33 +1,53 @@
-import "../_styles/index.scss";
-
 import { FunctionComponent } from "react";
 import { Icon } from "./Icon";
-import Column from "./layout/Column";
-import Row from "./layout/Row";
 
-const SocialMedia: FunctionComponent = () => {
+type Position = "row" | "column";
+type DisplayMode = "icon" | "text";
+
+export interface ISocialMediaProps {
+  position?: Position;
+  mode?: DisplayMode;
+}
+
+const SocialMedia: FunctionComponent<ISocialMediaProps> = (props) => {
   return (
-    <Row className="social-media">
-      <Column size={4}>
+    <ul
+      className={`social-media ${
+        props.position === "row" && "position-row"
+      } mode-text`}
+    >
+      <li>
         <a
           href="https://www.linkedin.com/in/anastasiia-sorina-b9681686"
           target="_blank"
         >
-          <Icon type="linkedIn" />
+          {props.mode === "icon" ? (
+            <Icon type="linkedIn" />
+          ) : (
+            <span>LINKEDIN</span>
+          )}
         </a>
-      </Column>
-      <Column size={4}>
+      </li>
+      <li>
         <a href="https://github.com/AnastasiiaSorina" target="_blank">
-          <Icon type="gitHub" />
+          {props.mode === "icon" ? <Icon type="gitHub" /> : <span>GITHUB</span>}
         </a>
-      </Column>
-      <Column size={4}>
+      </li>
+      <li>
         <a href="https://www.instagram.com/anastasaiia.sorina" target="_blank">
-          <Icon type="instagram" />
+          {props.mode === "icon" ? (
+            <Icon type="instagram" />
+          ) : (
+            <span>INSTAGRAM</span>
+          )}
         </a>
-      </Column>
-    </Row>
+      </li>
+    </ul>
   );
 };
 
+SocialMedia.defaultProps = {
+  position: "column",
+  mode: "icon",
+};
 export default SocialMedia;
