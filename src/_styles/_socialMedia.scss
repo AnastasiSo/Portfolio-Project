@@ -1,15 +1,15 @@
 .social-media {
   display: flex;
-  .icon {
-    fill: $black-20;
-  }
+  flex-direction: column;
+  margin-top: 10px; // Delete this, after margin
 
-  .row {
-    flex-direction: column;
-    margin-top: 10px; // Delete this, after margin
+  .column {
+    margin-bottom: $size-unit * 5; // 20px
 
-    .column {
-      margin-bottom: $size-unit * 5; // 20px
+    .icon {
+      fill: $black-20;
+      width: $size-unit * 4; // 16px
+      height: $size-unit * 4; // 16px
     }
   }
   @media (max-width: $breakpoint-sm) {
