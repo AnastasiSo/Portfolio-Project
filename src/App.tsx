@@ -1,5 +1,7 @@
+import Menu from "@components/Menu";
 import "../src/_styles/index.scss";
 import Navigation from "./components/Navigation";
+
 const App = () => {
   return (
     <div>
