@@ -17,7 +17,7 @@ const App = () => {
       </Hero>
       <Projects>
         <Slider>
-          <Slid />
+          <Slide />
         </Slider>
       </Projects> 
       <Projects>     
