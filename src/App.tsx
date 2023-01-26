@@ -1,3 +1,4 @@
+import Menu from "@components/Menu";
 import "../src/_styles/index.scss";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
