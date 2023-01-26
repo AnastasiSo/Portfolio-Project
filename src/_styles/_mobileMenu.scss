@@ -38,9 +38,9 @@
     .menu {
       display: flex;
       .menu-wrap {
-        margin-top: 2em;
+        margin-top: $size-unit * 8; // 32px
         .menu-items {
-          margin-bottom: 1em;
+          margin-bottom: $size-unit * 4; // 16px
           .menu-link {
             font-size: 34px;
             font-weight: 600;
