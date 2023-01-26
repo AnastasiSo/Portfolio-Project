@@ -11,6 +11,10 @@
   border-top: $border-unit solid $dark-blue;
   content: "";
   margin-bottom: $size-unit * 4; // 16px
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 30; // 120px
+  }
 }
 .site-description {
   font-size: $font-size; // 14px
@@ -24,5 +28,17 @@
   width: 100%;
   img {
     width: $size-unit * 55; // 220px
+  }
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 106px;
+  margin-top: $size-unit * 34; // 136px
+  margin-left: $size-unit * 47; // 188px
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 16; // 64px
+    font-size: 60px;
   }
 }

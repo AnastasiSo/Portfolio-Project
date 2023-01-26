@@ -1,5 +1,6 @@
 import "../_styles/index.scss";
 
+import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
 import Column from "./layout/Column";
 import Container from "./layout/Container";
@@ -17,6 +18,12 @@ const Hero: FunctionComponent = () => {
               work. Open for participation in interesting projects.
             </p>
           </div>
+          <h1>
+            Anastasiia
+            <br />
+            Sorina
+          </h1>
+          <SocialMedia />
         </Column>
         <Column size={7}>
           <div className="avatar">
@@ -24,6 +31,7 @@ const Hero: FunctionComponent = () => {
           </div>
         </Column>
       </Row>
+      <div></div>
     </Container>
   );
 };
