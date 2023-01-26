@@ -1,5 +1,7 @@
+// TODO: Add slow text animation for .menu-items
 .mobile-menu-button {
   color: $dark-blue;
+  cursor: pointer;
   @media (min-width: $breakpoint-sm) {
     display: none;
   }
@@ -30,6 +32,7 @@
 
       .mobile-menu-close {
         color: $white-10;
+        cursor: pointer;
       }
     }
     .menu {
