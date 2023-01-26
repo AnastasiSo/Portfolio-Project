@@ -1,5 +1,5 @@
+import { Icon } from "@components/Icon";
 import { FunctionComponent } from "react";
-import { Icon } from "./Icon";
 
 type Position = "row" | "column";
 type DisplayMode = "icon" | "text";
@@ -12,9 +12,8 @@ export interface ISocialMediaProps {
 const SocialMedia: FunctionComponent<ISocialMediaProps> = (props) => {
   return (
     <ul
-      className={`social-media ${
-        props.position === "row" && "position-row"
-      } mode-text`}
+      className={`social-media ${props.position === "row" && "position-row"}
+      ${props.mode === "text" && "mode-text"}`}
     >
       <li>
         <a

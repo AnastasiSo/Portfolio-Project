@@ -1,5 +1,54 @@
-.logo {
-  background: $grey-60;
-  height: 100px;
-  width: 100px;
+.menu {
+  font-size: $size-unit * 4; // 16px
+  width: 100%;
+  display: none;
+
+  .menu-items {
+    .menu-link {
+      display: flex;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    display: block;
+    .menu-wrap {
+      display: flex;
+      justify-content: flex-end;
+      background-color: $white;
+      width: 100%;
+
+      .menu-items {
+        display: flex;
+        align-content: center;
+        margin-left: $size-unit * 8; // 32px
+        transition: all 0.5s ease-out;
+
+        &:hover {
+          box-shadow: inset 0 (-$border-unit) 0 0 $dark-blue; // 1px
+        }
+
+        .menu-link {
+          color: $dark-blue;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+
+      .resume {
+        border: $border-unit solid $dark-blue;
+        padding: $size-unit * 3 $size-unit * 7; // 12px 28px
+        transition: all 0.5s ease-out;
+
+        &:hover {
+          background-color: $dark-blue;
+
+          .menu-link {
+            & > span {
+              color: $white-10;
+            }
+          }
+        }
+      }
+    }
+  }
 }

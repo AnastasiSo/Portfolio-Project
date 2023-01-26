@@ -1,10 +1,12 @@
-import Menu from "@components/Menu";
+import Navigation from "@components/Navigation";
+import { Fragment } from "react";
 import "../src/_styles/index.scss";
+
 const App = () => {
   return (
-    <div>
-      <Menu />
-    </div>
+    <Fragment>
+      <Navigation />
+    </Fragment>
   );
 };
 
@@ -14,9 +16,9 @@ const App = () => {
         <SocialMedia />
       </Hero>
       <Projects>
-        <Slaiders>
-          <Slider />
-        </Slaiders>
+        <Slider>
+          <Slide />
+        </Slider>
       </Projects> 
       <Projects>     
         <Rest />

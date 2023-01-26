@@ -1,0 +1,16 @@
+.navigation {
+  margin-top: $size-unit * 7; // 28px
+  .nav-menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo-wrap {
+    display: flex;
+    .logo {
+      display: flex;
+      .icon-logo {
+        height: $size-unit * 8; // 32px
+      }
+    }
+  }
+}
