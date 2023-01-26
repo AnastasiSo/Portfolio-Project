@@ -49,6 +49,15 @@
         }
       }
     }
+
+    .social-media {
+      margin-right: $size-unit * 3; // 8px
+      margin-top: $size-unit * 8; // 32px
+      & > li {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
   }
 
   @media (min-width: $breakpoint-sm) {
