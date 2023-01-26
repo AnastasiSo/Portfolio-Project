@@ -1,11 +1,12 @@
 import Navigation from "@components/Navigation";
+import { Fragment } from "react";
 import "../src/_styles/index.scss";
 
 const App = () => {
   return (
-    <div>
+    <Fragment>
       <Navigation />
-    </div>
+    </Fragment>
   );
 };
 
