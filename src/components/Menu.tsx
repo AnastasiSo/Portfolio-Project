@@ -1,9 +1,4 @@
-import "../_styles/index.scss";
-
 import { FunctionComponent } from "react";
-
-// TODO: 1.menu media query Sm, Md, Lg
-// TODO: 2.mobile menu functional
 
 const Menu: FunctionComponent = () => {
   const menuItems = ["About", "Projects", "Contacts", "Resume"];

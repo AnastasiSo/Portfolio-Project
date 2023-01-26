@@ -1,11 +1,8 @@
+import Column from "@components/layout/Column";
+import Row from "@components/layout/Row";
+import SocialMedia from "@components/SocialMedia";
 import { Fragment, FunctionComponent, useState } from "react";
-import "../_styles/index.scss";
-import Column from "./layout/Column";
-import Row from "./layout/Row";
 import Menu from "./Menu";
-
-// TODO: 1.menu media query Sm, Md, Lg
-// TODO: 2.mobile menu functional
 
 const MobileMenu: FunctionComponent = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -36,7 +33,7 @@ const MobileMenu: FunctionComponent = () => {
             </Column>
           </Row>
           <Menu />
-          {/* <SocialMedia /> */}
+          <SocialMedia />
         </div>
       )}
     </Fragment>

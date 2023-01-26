@@ -1,6 +1,5 @@
-import Menu from "@components/Menu";
+import Navigation from "@components/Navigation";
 import "../src/_styles/index.scss";
-import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
@@ -16,9 +15,9 @@ const App = () => {
         <SocialMedia />
       </Hero>
       <Projects>
-        <Slaiders>
-          <Slider />
-        </Slaiders>
+        <Slider>
+          <Slid />
+        </Slider>
       </Projects> 
       <Projects>     
         <Rest />

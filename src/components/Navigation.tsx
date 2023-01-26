@@ -1,14 +1,9 @@
-import "../_styles/index.scss";
-
+import Column from "@components/layout/Column";
+import Container from "@components/layout/Container";
+import Row from "@components/layout/Row";
+import Menu from "@components/Menu";
+import MobileMenu from "@components/MobileMenu";
 import { FunctionComponent } from "react";
-import Column from "./layout/Column";
-import Container from "./layout/Container";
-import Row from "./layout/Row";
-import Menu from "./Menu";
-import MobileMenu from "./MobileMenu";
-
-// TODO: 1.menu media query Sm, Md, Lg
-// TODO: 2.mobile menu functional
 
 const Navigation: FunctionComponent = () => {
   return (
