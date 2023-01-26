@@ -1,0 +1,24 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+
+  &.position-row {
+    flex-direction: row;
+  }
+
+  li {
+    margin-bottom: $size-unit * 5; // 20px
+
+    .icon {
+      fill: $black-20;
+      width: $size-unit * 4; // 16px
+      height: $size-unit * 4; // 16px
+    }
+
+    span {
+      margin-left: $size-unit * 11; // 44px
+      color: $dark-blue;
+      text-decoration-line: underline;
+    }
+  }
+}
