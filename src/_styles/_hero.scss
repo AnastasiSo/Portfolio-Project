@@ -33,12 +33,20 @@
 
 h1 {
   font-family: "Playfair Display";
-  font-size: 106px;
-  margin-top: $size-unit * 34; // 136px
-  margin-left: $size-unit * 47; // 188px
 
   @media (max-width: $breakpoint-sm) {
     margin-top: $size-unit * 16; // 64px
     font-size: 60px;
+    margin-bottom: $size-unit * 4; // 16px
+  }
+  @media (min-width: $breakpoint-sm) {
+    font-size: 106px;
+    margin-top: $size-unit * 34; // 136px
+    margin-left: $size-unit * 47; // 188px
+  }
+  @media (min-width: $breakpoint-md) {
+    font-size: 106px;
+    margin-top: $size-unit * 34; // 136px
+    margin-left: $size-unit * 47; // 188px
   }
 }
