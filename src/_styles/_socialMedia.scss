@@ -4,6 +4,10 @@
 
   &.position-row {
     flex-direction: row;
+
+    li {
+      margin-left: $size-unit * 6; // 24px
+    }
   }
 
   li {
@@ -11,8 +15,8 @@
 
     .icon {
       fill: $black-20;
-      width: $size-unit * 4; // 16px
-      height: $size-unit * 4; // 16px
+      width: $size-unit * 5; // 20px
+      height: $size-unit * 5; // 20px
     }
 
     span {

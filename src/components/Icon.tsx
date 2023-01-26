@@ -40,7 +40,7 @@ const Icon: FunctionComponent<IIconProps> = ({
       onClick={handleOnClick}
       style={color ? { color } : {}}
     >
-      <svg viewBox="0 0 18 18" width={size} height={size}>
+      <svg viewBox="0 0 20 20" width={size} height={size}>
         {type && ICON_TYPES[type] !== null ? (
           <path d={ICON_TYPES[type]} />
         ) : (
