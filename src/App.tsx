@@ -1,13 +1,14 @@
-import Menu from "@components/Menu";
+import Navigation from "@components/Navigation";
+import { Fragment } from "react";
 import "../src/_styles/index.scss";
 import Hero from "./components/Hero";
-import Menu from "./components/Menu";
+
 const App = () => {
   return (
-    <div>
-      <Menu />
+  <Fragment>
+      <Navigation />
       <Hero />
-    </div>
+    </Fragment>
   );
 };
 
@@ -17,9 +18,9 @@ const App = () => {
         <SocialMedia />
       </Hero>
       <Projects>
-        <Slaiders>
-          <Slider />
-        </Slaiders>
+        <Slider>
+          <Slide />
+        </Slider>
       </Projects> 
       <Projects>     
         <Rest />

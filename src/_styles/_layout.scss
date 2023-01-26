@@ -32,7 +32,6 @@
 
 .column {
   flex: none;
-  padding: 0 $layout-margin;
 
   &.center {
     margin: 0 auto;
@@ -46,9 +45,6 @@
 
   // Column defs for SM size (SM breakpoint and up)
   @media (min-width: $breakpoint-sm) {
-    padding-left: math.div($layout-spacing, 2);
-    padding-right: math.div($layout-spacing, 2);
-
     @for $i from 1 through $grid-columns {
       &.column-sm-#{$i} {
         width: percentage(math.div($i, $grid-columns));
