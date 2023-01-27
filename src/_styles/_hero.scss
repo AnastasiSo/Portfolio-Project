@@ -1,8 +1,5 @@
 .hero {
   margin-top: $size-unit * 5; // 20px
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
   color: $dark-blue;
   position: relative;
 
@@ -33,7 +30,6 @@
 
   .social-media {
     position: absolute;
-    left: unset;
     bottom: 0;
   }
 
@@ -66,7 +62,8 @@
 
   @media (min-width: $breakpoint-md) {
     .social-media {
-      left: $size-unit * 20; // 80px
+      right: unset;
+      left: $size-unit * 10; // 40px
     }
     h1 {
       font-size: 106px;
@@ -79,6 +76,11 @@
       img {
         margin-right: $size-unit * 30; // 120px
       }
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .social-media {
+      left: $size-unit * 20; // 80px
     }
   }
 }
