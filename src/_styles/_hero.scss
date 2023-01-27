@@ -57,8 +57,8 @@
 
     .social-media {
       position: absolute;
-      right: $size-unit * 4; // 16px
       bottom: 0;
+      left: unset;
     }
 
     h1 {
@@ -76,6 +76,7 @@
       margin-left: $size-unit * 30; // 120px
       margin-bottom: $size-unit * 25; // 100px
     }
+
     .avatar {
       img {
         margin-right: $size-unit * 30; // 120px
