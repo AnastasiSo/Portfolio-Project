@@ -32,7 +32,6 @@
 
   .social-media {
     position: absolute;
-    left: $size-unit * 20; // 40px + 16px + 24px
     bottom: 0;
   }
 
@@ -56,9 +55,7 @@
     position: relative;
 
     .social-media {
-      position: absolute;
-      bottom: 0;
-      left: unset;
+      right: $size-unit * 4; // 16px
     }
 
     h1 {
@@ -69,6 +66,9 @@
 
   @media (min-width: $breakpoint-md) {
     position: relative;
+    .social-media {
+      left: $size-unit * 20; // 40px + 16px + 24px
+    }
 
     h1 {
       font-size: 106px;
