@@ -4,49 +4,82 @@
   font-style: normal;
   font-weight: 400;
   color: $dark-blue;
-}
-.site-description::before {
-  display: block;
-  width: $size-unit * 20; // 80px
-  border-top: $border-unit solid $dark-blue;
-  content: "";
-  margin-bottom: $size-unit * 4; // 16px
 
-  @media (max-width: $breakpoint-sm) {
-    margin-top: $size-unit * 30; // 120px
-  }
-}
-.site-description {
-  font-size: $font-size; // 14px
-  line-height: 172%;
-}
-.avatar {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 13px;
-  line-height: 18px;
-  width: 100%;
-  img {
-    width: $size-unit * 55; // 220px
-  }
-}
-
-h1 {
-  font-family: "Playfair Display";
-
-  @media (max-width: $breakpoint-sm) {
-    margin-top: $size-unit * 16; // 64px
-    font-size: 60px;
+  .site-description::before {
+    display: block;
+    width: $size-unit * 20; // 80px
+    border-top: $border-unit solid $dark-blue;
+    content: "";
     margin-bottom: $size-unit * 4; // 16px
   }
-  @media (min-width: $breakpoint-sm) {
-    font-size: 106px;
-    margin-top: $size-unit * 34; // 136px
-    margin-left: $size-unit * 47; // 188px
+
+  .site-description {
+    font-size: $font-size; // 14px
+    line-height: 172%;
   }
+
+  h1 {
+    font-family: "Playfair Display";
+  }
+  .avatar {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: $size-unit * 55; // 220px
+    }
+  }
+
+  .social-media {
+    position: absolute;
+    left: $size-unit * 20; // 40px + 16px + 24px
+    bottom: 0;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    .site-description::before {
+      margin-top: $size-unit * 30; // 120px
+    }
+
+    .social-media {
+      display: none;
+    }
+
+    h1 {
+      margin-top: $size-unit * 16; // 64px
+      font-size: 60px;
+      margin-bottom: $size-unit * 4; // 16px
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    position: relative;
+
+    .social-media {
+      position: absolute;
+      right: 16px;
+      bottom: 0;
+    }
+
+    h1 {
+      font-size: 95px;
+      margin-top: $size-unit * 52; // 208px
+    }
+  }
+
   @media (min-width: $breakpoint-md) {
-    font-size: 106px;
-    margin-top: $size-unit * 34; // 136px
-    margin-left: $size-unit * 47; // 188px
+    position: relative;
+
+    h1 {
+      font-size: 106px;
+      margin-top: $size-unit * 62; // 248px
+      margin-left: $size-unit * 30; // 120px
+      margin-bottom: $size-unit * 25; // 100px
+    }
+    .avatar {
+      img {
+        margin-right: $size-unit * 30; // 120px
+      }
+    }
   }
 }
