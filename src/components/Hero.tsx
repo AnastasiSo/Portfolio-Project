@@ -1,5 +1,3 @@
-import "../_styles/index.scss";
-
 import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
 import Column from "./layout/Column";
@@ -31,7 +29,6 @@ const Hero: FunctionComponent = () => {
           </div>
         </Column>
       </Row>
-      <div></div>
     </Container>
   );
 };

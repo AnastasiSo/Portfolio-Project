@@ -57,7 +57,7 @@
 
     .social-media {
       position: absolute;
-      right: 16px;
+      right: $size-unit * 4; // 16px
       bottom: 0;
     }
 
