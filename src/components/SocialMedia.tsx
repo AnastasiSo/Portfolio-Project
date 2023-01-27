@@ -12,8 +12,10 @@ export interface ISocialMediaProps {
 const SocialMedia: FunctionComponent<ISocialMediaProps> = (props) => {
   return (
     <ul
-      className={`social-media ${props.position === "row" && "position-row"}
-      ${props.mode === "text" && "mode-text"}`}
+      className={`social-media ${
+        props.position === "row" ? "position-row" + props.position : ""
+      }
+      ${props.mode === "text" ? "mode-text" + props.mode : ""}`}
     >
       <li>
         <a
