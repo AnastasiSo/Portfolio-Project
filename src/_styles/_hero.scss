@@ -4,6 +4,7 @@
   font-style: normal;
   font-weight: 400;
   color: $dark-blue;
+  position: relative;
 
   .site-description::before {
     display: block;
@@ -32,6 +33,7 @@
 
   .social-media {
     position: absolute;
+    left: unset;
     bottom: 0;
   }
 
@@ -52,8 +54,6 @@
   }
 
   @media (min-width: $breakpoint-sm) {
-    position: relative;
-
     .social-media {
       right: $size-unit * 4; // 16px
     }
@@ -65,11 +65,9 @@
   }
 
   @media (min-width: $breakpoint-md) {
-    position: relative;
     .social-media {
-      left: $size-unit * 20; // 40px + 16px + 24px
+      left: $size-unit * 20; // 80px
     }
-
     h1 {
       font-size: 106px;
       margin-top: $size-unit * 62; // 248px
