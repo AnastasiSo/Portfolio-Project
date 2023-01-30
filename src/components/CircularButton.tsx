@@ -14,7 +14,7 @@ const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
         type="arrow"
         parameters={"0 0 28 28"}
         size={28}
-        className={`"icon" ${props.direction === "top" ? "direction-top" : ""}${
+        className={`icon ${props.direction === "top" ? "direction-top" : ""}${
           props.direction === "left" ? "direction-left" : ""
         }`}
       />
