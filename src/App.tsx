@@ -1,4 +1,3 @@
-import CircularButton from "@components/CircularButton";
 import Hero from "@components/Hero";
 import Navigation from "@components/Navigation";
 import { Fragment } from "react";
@@ -9,7 +8,6 @@ const App = () => {
     <Fragment>
       <Navigation />
       <Hero />
-      <CircularButton direction="left" />
     </Fragment>
   );
 };

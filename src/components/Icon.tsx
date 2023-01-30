@@ -12,7 +12,7 @@ interface IIconProps {
   className?: string;
   color?: string;
 
-  parameters?: string;
+  boxSize?: string;
 
   onClick?: () => void;
 }
@@ -22,7 +22,8 @@ const Icon: FunctionComponent<IIconProps> = ({
   size,
   type,
   color,
-  parameters,
+  boxSize,
+  className,
   onClick,
 }) => {
   if (ICON_TYPES[type] == null) {
@@ -36,13 +37,13 @@ const Icon: FunctionComponent<IIconProps> = ({
 
   return (
     <div
-      className="icon"
+      className={`icon ${className}`}
       title={title}
       data-type={type}
       onClick={handleOnClick}
       style={color ? { color } : {}}
     >
-      <svg viewBox={parameters} width={size} height={size}>
+      <svg viewBox={boxSize} width={size} height={size}>
         {type && ICON_TYPES[type] !== null ? (
           <path d={ICON_TYPES[type]} />
         ) : (
@@ -55,7 +56,7 @@ const Icon: FunctionComponent<IIconProps> = ({
 
 Icon.defaultProps = {
   size: 20,
-  parameters: "0 0 20 20",
+  boxSize: "0 0 20 20",
 };
 
 export { Icon, IIconProps, IconType };
