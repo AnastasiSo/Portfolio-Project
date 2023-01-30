@@ -1,10 +1,10 @@
-import { Icon, IIconProps } from "@components/Icon";
+import { Icon } from "@components/Icon";
 import { FunctionComponent } from "react";
 
 type Direction = "left" | "top" | "right";
 export interface ICircularButtonProps {
   direction?: Direction;
-  size?: IIconProps;
+  size?: number;
 }
 
 const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
