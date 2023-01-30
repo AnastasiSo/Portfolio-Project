@@ -1,15 +1,15 @@
+import CircularButton from "@components/CircularButton";
 import Hero from "@components/Hero";
 import Navigation from "@components/Navigation";
 import { Fragment } from "react";
 import "../src/_styles/index.scss";
-import CircularButton from "./components/CircularButton";
 
 const App = () => {
   return (
     <Fragment>
       <Navigation />
       <Hero />
-      <CircularButton />
+      <CircularButton direction="left" />
     </Fragment>
   );
 };

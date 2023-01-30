@@ -10,19 +10,18 @@ export interface ICircularButtonProps {
 
 const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
   return (
-    <Icon type="arrow" size={20} />
-    //     <button
-    //       className={`social-media
-    //       ${props.direction === "top" && "direction-top"}${
-    //         props.direction === "left" && "direction-left"
-    //       }`}
-    //     >
-    //       <li>
-    //         <a href="#">
-    //
-    //         </a>
-    //       </li>
-    //     </button>
+    <button className="circular-button">
+      <Icon
+        type="arrow"
+        parameters={"0 0 28 28"}
+        size={28}
+        className={`"icon" ${
+          props.direction === "top" ? "direction-top" + props.direction : ""
+        }${
+          props.direction === "left" ? "direction-left" + props.direction : ""
+        }`}
+      />
+    </button>
   );
 };
 
