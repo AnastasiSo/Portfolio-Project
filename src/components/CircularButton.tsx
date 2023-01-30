@@ -2,7 +2,6 @@ import { Icon, IIconProps } from "@components/Icon";
 import { FunctionComponent } from "react";
 
 type Direction = "left" | "top" | "right";
-
 export interface ICircularButtonProps {
   direction?: Direction;
   size?: IIconProps;
@@ -15,10 +14,8 @@ const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
         type="arrow"
         parameters={"0 0 28 28"}
         size={28}
-        className={`"icon" ${
-          props.direction === "top" ? "direction-top" + props.direction : ""
-        }${
-          props.direction === "left" ? "direction-left" + props.direction : ""
+        className={`"icon" ${props.direction === "top" ? "direction-top" : ""}${
+          props.direction === "left" ? "direction-left" : ""
         }`}
       />
     </button>
