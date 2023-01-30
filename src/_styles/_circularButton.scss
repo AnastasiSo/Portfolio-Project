@@ -3,8 +3,8 @@
 
   .icon {
     border: $border-unit solid $dark-blue;
-    width: 62px;
-    height: 62px;
+    width: $size-unit * 16; // 64px
+    height: $size-unit * 16; // 64px
     border-radius: 100%;
     position: relative;
     fill: $dark-blue;
