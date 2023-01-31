@@ -37,7 +37,7 @@ const Icon: FunctionComponent<IIconProps> = ({
 
   return (
     <div
-      className={`icon ${className}`}
+      className={`icon ${className ? className : ""}`}
       title={title}
       data-type={type}
       onClick={handleOnClick}
