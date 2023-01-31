@@ -12,6 +12,8 @@ interface IIconProps {
   className?: string;
   color?: string;
 
+  boxSize?: string;
+
   onClick?: () => void;
 }
 
@@ -20,12 +22,13 @@ const Icon: FunctionComponent<IIconProps> = ({
   size,
   type,
   color,
+  boxSize,
+  className,
   onClick,
 }) => {
   if (ICON_TYPES[type] == null) {
     console.error(`[Icon] Invalid icon type: ${type}`);
   }
-
   const handleOnClick = () => {
     if (typeof onClick === "function") {
       onClick();
@@ -34,13 +37,13 @@ const Icon: FunctionComponent<IIconProps> = ({
 
   return (
     <div
-      className="icon"
+      className={`icon ${className ? className : ""}`}
       title={title}
       data-type={type}
       onClick={handleOnClick}
       style={color ? { color } : {}}
     >
-      <svg viewBox="0 0 20 20" width={size} height={size}>
+      <svg viewBox={boxSize} width={size} height={size}>
         {type && ICON_TYPES[type] !== null ? (
           <path d={ICON_TYPES[type]} />
         ) : (
@@ -53,6 +56,7 @@ const Icon: FunctionComponent<IIconProps> = ({
 
 Icon.defaultProps = {
   size: 20,
+  boxSize: "0 0 20 20",
 };
 
 export { Icon, IIconProps, IconType };

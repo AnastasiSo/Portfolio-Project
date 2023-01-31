@@ -1,0 +1,25 @@
+.circular-button {
+  display: flex;
+
+  .icon {
+    border: $border-unit solid $dark-blue;
+    width: $size-unit * 16; // 64px
+    height: $size-unit * 16; // 64px
+    border-radius: 100%;
+    position: relative;
+    fill: $dark-blue;
+
+    svg {
+      position: absolute;
+      top: 25%;
+      right: 25%;
+    }
+  }
+  .direction-left {
+    transform: rotate(180deg);
+  }
+
+  .direction-top {
+    transform: rotate(270deg);
+  }
+}
