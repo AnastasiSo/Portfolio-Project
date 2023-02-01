@@ -63,3 +63,27 @@ $size-unit: 4px;
 
 $grid-columns: 12;
 $font-size: 14px;
+
+// Font-size
+
+$size-paragraph: 14px;
+$size-label: 14px;
+$size-label-sm: 11px;
+
+@media (max-width: $breakpoint-sm) {
+  $size-h1: 60px;
+  $size-h2: 34px;
+  $size-h3: 20px;
+  $size-h4: 14px;
+}
+@media (min-width: $breakpoint-sm) {
+  $size-h1: 95px;
+  $size-h2: 65px;
+  $size-h3: 42px;
+  $size-h4: 16px;
+}
+@media (min-width: $breakpoint-md) {
+  $size-h1: 106px;
+  $size-paragraph: 16px;
+  $size-label-sm: 12px;
+}
