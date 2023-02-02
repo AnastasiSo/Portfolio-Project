@@ -6,11 +6,5 @@
   }
   .logo-wrap {
     display: flex;
-    .logo {
-      display: flex;
-      .icon-logo {
-        height: $size-unit * 8; // 32px
-      }
-    }
   }
 }
