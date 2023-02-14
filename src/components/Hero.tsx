@@ -1,8 +1,8 @@
+import Column from "@components/layout/Column";
+import Container from "@components/layout/Container";
+import Row from "@components/layout/Row";
 import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
-import Column from "./layout/Column";
-import Container from "./layout/Container";
-import Row from "./layout/Row";
 
 const Hero: FunctionComponent = () => {
   return (

@@ -1,0 +1,34 @@
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 80px;
+  .slide-item {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .right-circular-button {
+    margin-left: $size-unit * 233; // slider-wrap 916px + margin 16px = 932px
+  }
+  .left-circular-button {
+    margin-left: -$size-unit * 20; // -80px
+  }
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  .dot {
+    margin: $size-unit * 3; // 12px
+    cursor: pointer;
+    width: $size-unit * 4; // 16px
+    height: $size-unit * 4; // 16px
+    border: $border-unit solid $dark-blue;
+    border-radius: 100%;
+    &:active {
+      background-color: $dark-blue;
+    }
+  }
+}
