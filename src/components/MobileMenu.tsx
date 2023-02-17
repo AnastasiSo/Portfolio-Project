@@ -2,6 +2,7 @@ import Column from "@components/layout/Column";
 import Row from "@components/layout/Row";
 import SocialMedia from "@components/SocialMedia";
 import { Fragment, FunctionComponent, useState } from "react";
+import Logo from "./Logo";
 import Menu from "./Menu";
 
 const MobileMenu: FunctionComponent = () => {
@@ -19,9 +20,7 @@ const MobileMenu: FunctionComponent = () => {
         <div className="mobile-menu">
           <Row>
             <Column size={6} className="logo-wrap">
-              <a className="logo" href="#">
-                <img src="../img/logo-mobile.png" className="icon-logo" />
-              </a>
+              <Logo />
             </Column>
             <Column size={6}>
               <button

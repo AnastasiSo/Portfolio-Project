@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+
+  .icon-logo {
+    height: $size-unit * 8; // 32px
+  }
+
+  svg {
+    fill: $dark-blue;
+  }
+}
