@@ -1,25 +1,27 @@
-.slider {
+.slider-item-wrap {
   width: 100%;
   height: 100%;
-  position: relative;
-  margin: 0 80px;
+  margin: 0 auto;
+
   .slide-item {
     width: 100%;
     height: 100%;
+    max-width: $size-unit * 229; // 916px
     background-position: center;
     background-size: cover;
-  }
-  .right-circular-button {
-    margin-left: $size-unit * 233; // slider-wrap 916px + margin 16px = 932px
-  }
-  .left-circular-button {
-    margin-left: -$size-unit * 20; // -80px
+
+    &.active {
+      .dot {
+        background-color: $dark-blue;
+      }
+    }
   }
 }
 
 .dots-container {
   display: flex;
   justify-content: center;
+
   .dot {
     margin: $size-unit * 3; // 12px
     cursor: pointer;
@@ -27,7 +29,8 @@
     height: $size-unit * 4; // 16px
     border: $border-unit solid $dark-blue;
     border-radius: 100%;
-    &:active {
+
+    &.active {
       background-color: $dark-blue;
     }
   }

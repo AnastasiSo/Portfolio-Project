@@ -1,9 +1,22 @@
-.circular-button {
-  position: absolute;
-  top: 50%;
-}
-.slider-wrap {
-  width: $size-unit * 229; // 916px
+.slider {
+  max-width: $size-unit * 229; // 916px
   height: $size-unit * 107; // 428px
   margin: 0 auto;
+  position: relative;
+
+  .circular-button {
+    top: 50%;
+  }
+
+  .right-circular-button {
+    right: -75px;
+    position: absolute;
+    top: 50%;
+  }
+
+  .left-circular-button {
+    left: -75px;
+    position: absolute;
+    top: 50%;
+  }
 }

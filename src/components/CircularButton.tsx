@@ -6,11 +6,14 @@ export interface ICircularButtonProps {
   direction?: Direction;
   size?: number;
   className?: string;
-  handlerOnClick?: () => void;
+  handlerOnClick?: (newVal?) => void;
 }
 const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
   return (
-    <button className="circular-button" onClick={props.handlerOnClick}>
+    <button
+      className="circular-button"
+      onClick={(newVal) => props.handlerOnClick(newVal)}
+    >
       <Icon
         type="arrow"
         boxSize={"0 0 28 28"}
