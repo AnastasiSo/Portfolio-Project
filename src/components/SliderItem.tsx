@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 export interface ISliderItemProps {
   slides: Array<{ url: string; title: string }>;
-  buttonHandlers?: () => void;
   currentIndex: number;
   setCurrentIndex: (newVal: number) => void;
 }
