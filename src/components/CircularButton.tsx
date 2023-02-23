@@ -7,15 +7,18 @@ export interface ICircularButtonProps {
   size?: number;
 }
 
-const CircularButton: FunctionComponent<ICircularButtonProps> = (props) => {
+const CircularButton: FunctionComponent<ICircularButtonProps> = ({
+  direction,
+  size,
+}) => {
   return (
     <button className="circular-button">
       <Icon
         type="arrow"
         boxSize={"0 0 28 28"}
         size={28}
-        className={`icon ${props.direction === "top" ? "direction-top" : ""}${
-          props.direction === "left" ? "direction-left" : ""
+        className={`icon ${direction === "top" ? "direction-top" : ""}${
+          direction === "left" ? "direction-left" : ""
         }`}
       />
     </button>
