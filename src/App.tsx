@@ -1,5 +1,6 @@
 import Hero from "@components/Hero";
 import Navigation from "@components/Navigation";
+import Projects from "@components/Projects";
 import { Fragment } from "react";
 import "../src/_styles/index.scss";
 
@@ -8,6 +9,7 @@ const App = () => {
     <Fragment>
       <Navigation />
       <Hero />
+      <Projects />
     </Fragment>
   );
 };
