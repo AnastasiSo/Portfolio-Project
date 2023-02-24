@@ -9,38 +9,31 @@ export interface ISocialMediaProps {
   mode?: DisplayMode;
 }
 
-const SocialMedia: FunctionComponent<ISocialMediaProps> = (props) => {
+const SocialMedia: FunctionComponent<ISocialMediaProps> = ({
+  position,
+  mode,
+}) => {
   return (
     <ul
-      className={`social-media ${
-        props.position === "row" ? "position-row" + props.position : ""
-      }
-      ${props.mode === "text" ? "mode-text" + props.mode : ""}`}
+      className={`social-media ${position === "row" ? "position-row" : ""}
+      ${mode === "text" ? "mode-text" : ""}`}
     >
       <li>
         <a
           href="https://www.linkedin.com/in/anastasiia-sorina-b9681686"
           target="_blank"
         >
-          {props.mode === "icon" ? (
-            <Icon type="linkedIn" />
-          ) : (
-            <span>LINKEDIN</span>
-          )}
+          {mode === "icon" ? <Icon type="linkedIn" /> : <span>LINKEDIN</span>}
         </a>
       </li>
       <li>
         <a href="https://github.com/AnastasiiaSorina" target="_blank">
-          {props.mode === "icon" ? <Icon type="gitHub" /> : <span>GITHUB</span>}
+          {mode === "icon" ? <Icon type="gitHub" /> : <span>GITHUB</span>}
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/anastasaiia.sorina" target="_blank">
-          {props.mode === "icon" ? (
-            <Icon type="instagram" />
-          ) : (
-            <span>INSTAGRAM</span>
-          )}
+          {mode === "icon" ? <Icon type="instagram" /> : <span>INSTAGRAM</span>}
         </a>
       </li>
     </ul>
