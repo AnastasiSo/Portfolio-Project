@@ -1,0 +1,7 @@
+@media (min-width: $breakpoint-md) {
+  .hero h1,
+  .contacts,
+  .projects h2 {
+    margin-left: $size-unit * 30; // 120px
+  }
+}

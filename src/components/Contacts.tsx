@@ -9,7 +9,7 @@ const Contacts: FunctionComponent = () => {
   return (
     <Container>
       <Row className="contacts">
-        <Column size={8}>
+        <Column size={12} sizeSM={8}>
           <h2>Contacts</h2>
           <p className="contacts-description">
             I am currently looking for new opportunities, my inbox is always
@@ -20,7 +20,7 @@ const Contacts: FunctionComponent = () => {
           <p className="contacts-mail">anastasiiasorina@gmail.com</p>
           <SocialMedia position="row" />
         </Column>
-        <Column size={4} className="back-top-button">
+        <Column size={12} sizeSM={4} className="back-top-button">
           <CircularButton direction="top" />
           <p>BACK TO TOP</p>
         </Column>
