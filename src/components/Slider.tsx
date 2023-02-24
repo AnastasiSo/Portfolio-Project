@@ -1,7 +1,6 @@
 import CircularButton from "@components/CircularButton";
-import Container from "@components/layout/Container";
 import SliderItems from "@components/SliderItems";
-import { FunctionComponent, useState } from "react";
+import { Fragment, FunctionComponent, useState } from "react";
 const Slider: FunctionComponent = () => {
   const slides = [
     { url: "../img/project-1.gif", title: "Cards" },
@@ -26,7 +25,7 @@ const Slider: FunctionComponent = () => {
   };
 
   return (
-    <Container>
+    <Fragment>
       <div className="slider">
         <CircularButton
           direction="left"
@@ -43,7 +42,7 @@ const Slider: FunctionComponent = () => {
           className="right-circular-button"
         />
       </div>
-    </Container>
+    </Fragment>
   );
 };
 export default Slider;

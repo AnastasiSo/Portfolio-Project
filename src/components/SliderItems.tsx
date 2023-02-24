@@ -25,11 +25,9 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
         {slides.map((_, slideIndex) => (
           <div
             key={slideIndex}
-            className="dot"
+            className={`dot ${currentIndex == slideIndex ? "active" : ""}`}
             onClick={() => goToSlide(slideIndex)}
-          >
-            {" "}
-          </div>
+          ></div>
         ))}
       </div>
     </div>
