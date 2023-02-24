@@ -1,11 +1,11 @@
 import CircularButton from "@components/CircularButton";
+import Column from "@components/layout/Column";
+import Container from "@components/layout/Container";
+import Row from "@components/layout/Row";
 import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
-import Column from "./layout/Column";
-import Container from "./layout/Container";
-import Row from "./layout/Row";
 
-const Contacts: FunctionComponent = () => {
+const Contacts: FunctionComponent = (className) => {
   return (
     <Container>
       <Row className="contacts">
@@ -18,7 +18,7 @@ const Contacts: FunctionComponent = () => {
           </p>
           <p className="contacts-title">E-MAIL</p>
           <p className="contacts-mail">anastasiiasorina@gmail.com</p>
-          <SocialMedia position="row" />
+          <SocialMedia position="row" className={"color"} />
         </Column>
         <Column size={12} sizeSM={4} className="back-top-button">
           <CircularButton direction="top" />
