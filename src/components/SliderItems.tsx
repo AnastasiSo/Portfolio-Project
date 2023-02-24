@@ -1,11 +1,11 @@
 import { FunctionComponent } from "react";
-export interface ISliderItemProps {
+export interface ISliderItemsProps {
   slides: Array<{ url: string; title: string }>;
   currentIndex: number;
   setCurrentIndex: (newVal: number) => void;
 }
 
-const SliderItem: FunctionComponent<ISliderItemProps> = ({
+const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   slides,
   currentIndex,
   setCurrentIndex,
@@ -35,4 +35,4 @@ const SliderItem: FunctionComponent<ISliderItemProps> = ({
     </div>
   );
 };
-export default SliderItem;
+export default SliderItems;

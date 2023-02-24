@@ -23,4 +23,12 @@
   .direction-top {
     transform: rotate(270deg);
   }
+
+  &:active {
+    border-radius: 100%;
+    background-color: $dark-blue;
+    svg {
+      fill: $white;
+    }
+  }
 }

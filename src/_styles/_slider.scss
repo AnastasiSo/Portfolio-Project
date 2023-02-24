@@ -6,17 +6,14 @@
 
   .circular-button {
     top: 50%;
+    position: absolute;
   }
 
   .right-circular-button {
     right: -75px;
-    position: absolute;
-    top: 50%;
   }
 
   .left-circular-button {
     left: -75px;
-    position: absolute;
-    top: 50%;
   }
 }

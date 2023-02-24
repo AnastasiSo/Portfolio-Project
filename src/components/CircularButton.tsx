@@ -16,16 +16,16 @@ const CircularButton: FunctionComponent<ICircularButtonProps> = ({
 }) => {
   return (
     <button
-      className="circular-button"
+      className={`circular-button ${className}`}
       onClick={(newVal) => handlerOnClick(newVal)}
     >
       <Icon
         type="arrow"
         boxSize={"0 0 28 28"}
         size={28}
-        className={`icon ${direction === "top" ? "direction-top" : ""} ${
+        className={`${direction === "top" ? "direction-top" : ""} ${
           direction === "left" ? "direction-left" : ""
-        } ${className}`}
+        }`}
       />
     </button>
   );

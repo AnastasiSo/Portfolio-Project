@@ -1,6 +1,6 @@
 import CircularButton from "@components/CircularButton";
 import Container from "@components/layout/Container";
-import SliderItem from "@components/SliderItem";
+import SliderItems from "@components/SliderItems";
 import { FunctionComponent, useState } from "react";
 const Slider: FunctionComponent = () => {
   const slides = [
@@ -33,7 +33,7 @@ const Slider: FunctionComponent = () => {
           handlerOnClick={() => goToPrevious(currentIndex)}
           className="left-circular-button"
         />
-        <SliderItem
+        <SliderItems
           slides={slides}
           currentIndex={currentIndex}
           setCurrentIndex={(newVal) => setCurrentIndex(newVal)}
