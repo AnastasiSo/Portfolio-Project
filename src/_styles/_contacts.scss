@@ -1,16 +1,21 @@
 .contacts {
   color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+
   h2 {
     @include h2-font;
   }
   .contacts-description {
     @include paragraph-font;
+    margin-top: $size-unit * 5; // 20px
   }
   .contacts-title {
     @include label-font-sm;
   }
   .contacts-mail {
     font-size: 42px; // TODO: use line-height and fonts value multiply $size-unit
+    margin-top: $size-unit; // 4px
   }
 
   .social-media {
@@ -19,7 +24,6 @@
 
   .back-top-button {
     width: $size-unit * 20; // 80px
-
     .circular-button {
       margin: 0 auto;
     }
@@ -34,10 +38,6 @@
 @media (max-width: $breakpoint-sm) {
   .contacts {
     margin-top: $size-unit * 42; // 168px
-
-    .contacts-description {
-      margin-top: $size-unit * 5; // 20px
-    }
 
     .contacts-title {
       margin-top: $size-unit * 6; // 24px
@@ -55,11 +55,34 @@
     }
 
     .back-top-button {
+      padding-top: $size-unit * 37; // 148px
       margin: 0 auto;
+
+      p {
+        padding-top: $size-unit * 4; // 16px
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+  .contacts {
+    margin-top: $size-unit * 28; // 112px
+
+    .contacts-title {
+      margin-top: $size-unit * 5; // 20px
+    }
+
+    .contacts-mail {
+      font-size: $size-unit * 5; // 20px
+      margin-top: $border-unit * 2; // 2px
+      margin-bottom: $size-unit * 6; // 24px
+    }
+
+    .back-top-button {
       padding-top: $size-unit * 37; // 148px
 
       p {
-        margin: 0 auto;
         padding-top: $size-unit * 4; // 16px
       }
     }
@@ -79,9 +102,6 @@
       margin-top: $size-unit * 10; // 40px
     }
 
-    .contacts-mail {
-      margin-top: $size-unit; // 4px
-    }
     .back-top-button {
       margin-top: $size-unit * 16; // 64px
 
