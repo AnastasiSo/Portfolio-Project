@@ -1,19 +1,28 @@
 .slider {
   max-width: $size-unit * 229; // 916px
-  height: $size-unit * 107; // 428px
+  min-width: $size-unit * 86; // 344px
+  height: $size-unit * 108; // 424px;
   margin: 0 auto;
   position: relative;
 
   .circular-button {
-    top: 50%;
-    position: absolute;
+    display: none;
   }
+}
+@media (min-width: $breakpoint-md) {
+  .slider {
+    .circular-button {
+      display: block;
+      top: 50%;
+      position: absolute;
+    }
 
-  .right-circular-button {
-    right: -75px;
-  }
+    .right-circular-button {
+      right: -($size-unit * 18); // -72px;
+    }
 
-  .left-circular-button {
-    left: -75px;
+    .left-circular-button {
+      left: -($size-unit * 18); // -72px;
+    }
   }
 }
