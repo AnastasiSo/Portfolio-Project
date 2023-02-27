@@ -12,6 +12,10 @@
   font-size: 14px;
   line-height: 22px; // TODO: use line-height and fonts value multiply $size-unit
   font-weight: 400;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 16px;
+  }
 }
 
 @mixin label-font-sm {
@@ -46,6 +50,7 @@
   font-weight: 600;
   font-size: 34px;
   line-height: 45px;
+  color: #224a54;
 
   @media (min-width: $breakpoint-sm) {
     font-size: 65px;

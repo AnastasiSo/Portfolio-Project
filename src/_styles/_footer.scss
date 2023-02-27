@@ -1,0 +1,29 @@
+.footer {
+  p {
+    @include label-font-sm;
+  }
+  .social-media {
+    @include label-font;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .footer {
+    margin-top: $size-unit * 10; // 40px
+
+    .social-media {
+      display: none;
+    }
+  }
+}
+@media (min-width: $breakpoint-sm) {
+  .footer {
+    margin-top: $size-unit * 37; // 148px
+  }
+}
+@media (min-width: $breakpoint-md) {
+  .footer {
+    margin-top: $size-unit * 36; // 144px
+  }
+}
