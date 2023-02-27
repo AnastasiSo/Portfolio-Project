@@ -35,6 +35,11 @@
         cursor: pointer;
       }
     }
+
+    .logo svg {
+      fill: $white-10;
+    }
+
     .menu {
       display: flex;
       .menu-wrap {

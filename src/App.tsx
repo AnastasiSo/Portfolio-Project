@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import Hero from "@components/Hero";
 import Navigation from "@components/Navigation";
 import Slider from "@components/Slider";
@@ -10,6 +11,7 @@ const App = () => {
       <Navigation />
       <Hero />
       <Slider />
+      <Footer />
     </Fragment>
   );
 };

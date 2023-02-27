@@ -1,8 +1,10 @@
 @use "sass:math";
 @import "base";
+@import "mixins/typography";
 @import "variables";
 @import "layout";
 @import "fonts";
+@import "logo";
 @import "hero";
 @import "navigation";
 @import "menu";
@@ -11,3 +13,5 @@
 @import "circularButton";
 @import "slider";
 @import "sliderItems";
+@import "footer";
+
