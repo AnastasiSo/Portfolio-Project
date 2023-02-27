@@ -10,7 +10,6 @@ Frontend developer/Product Owner [@AnastasiiaSorina](https://github.com/Anastasi
 - Establish design
 - Implementation client part
 - API
-- QA
 - Manage repository
 
 Architect/Backend developer [@TaniaZaslon](https://github.com/TaniaZaslon)
