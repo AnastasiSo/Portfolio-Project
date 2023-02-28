@@ -29,3 +29,5 @@ UX/UI designer [@Anastasia](https://github.com/NaYaFit)
 
 To run app use
 `npm run dev`
+
+# Project life cycle:
