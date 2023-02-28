@@ -5,7 +5,10 @@ import Row from "@components/layout/Row";
 import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
 
-const Contacts: FunctionComponent = (className) => {
+const Contacts: FunctionComponent = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <Container>
       <Row className="contacts">
@@ -21,7 +24,7 @@ const Contacts: FunctionComponent = (className) => {
           <SocialMedia position="row" className={"color"} />
         </Column>
         <Column size={12} sizeSM={4} className="back-top-button">
-          <CircularButton direction="top" />
+          <CircularButton direction="top" handlerOnClick={handleScrollToTop} />
           <p>BACK TO TOP</p>
         </Column>
       </Row>
