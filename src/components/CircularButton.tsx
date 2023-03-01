@@ -4,14 +4,11 @@ import { FunctionComponent } from "react";
 type Direction = "left" | "top" | "right";
 export interface ICircularButtonProps {
   direction?: Direction;
-  size?: number;
   className?: string;
-  hreaf?: string;
   handlerOnClick?: (newVal?) => void;
 }
 const CircularButton: FunctionComponent<ICircularButtonProps> = ({
   direction,
-  size,
   className,
   handlerOnClick,
 }) => {
