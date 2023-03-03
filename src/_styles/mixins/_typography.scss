@@ -85,3 +85,20 @@
     line-height: 26px;
   }
 }
+
+@mixin caption {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 56px;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 20px;
+    line-height: 31px;
+  }
+}

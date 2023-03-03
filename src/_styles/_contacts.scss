@@ -1,11 +1,10 @@
 .contacts {
   color: $dark-blue;
-  display: flex;
-  justify-content: space-between;
   .column {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
+
   h2 {
     @include h2-font;
   }
@@ -17,7 +16,7 @@
     @include label-font-sm;
   }
   .contacts-mail {
-    font-size: 42px; // TODO: use line-height and fonts value multiply $size-unit
+    @include caption; // TODO: use line-height and fonts value multiply $size-unit
     margin-top: $size-unit; // 4px
   }
 
@@ -48,7 +47,6 @@
     }
 
     .contacts-mail {
-      font-size: $size-unit * 5; // 20px
       margin-top: $border-unit * 2; // 2px
       margin-bottom: $size-unit * 6; // 24px
     }
@@ -78,13 +76,12 @@
     }
 
     .contacts-mail {
-      font-size: $size-unit * 5; // 20px
       margin-top: $border-unit * 2; // 2px
       margin-bottom: $size-unit * 6; // 24px
     }
 
     .back-top-button {
-      padding-top: $size-unit * 37; // 148px
+      padding-top: $size-unit * 16; // 64px
 
       & > p {
         padding-top: $size-unit * 4; // 16px
@@ -107,8 +104,6 @@
     }
 
     .back-top-button {
-      margin-top: $size-unit * 16; // 64px
-
       & > p {
         margin-top: $size-unit * 5; // 20px
       }

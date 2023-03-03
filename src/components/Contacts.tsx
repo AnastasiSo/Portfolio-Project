@@ -15,14 +15,16 @@ const Contacts: FunctionComponent = () => {
     <Container>
       <Row className="contacts">
         <Column size={12} sizeSM={8}>
-          <h2>Contacts</h2>
-          <p className="contacts-description">
-            I am currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or offers! Let's stay in touch via
-            email or LinkedIn.
-          </p>
-          <p className="contacts-title">E-MAIL</p>
-          <p className="contacts-mail">anastasiiasorina@gmail.com</p>
+          <div className="contacts-wrap">
+            <h2>Contacts</h2>
+            <p className="contacts-description">
+              I am currently looking for new opportunities, my inbox is always
+              open. Whether you have a question or offers! Let's stay in touch
+              via email or LinkedIn.
+            </p>
+            <p className="contacts-title">E-MAIL</p>
+            <p className="contacts-mail">anastasiiasorina@gmail.com</p>
+          </div>
           <SocialMedia position="row" className={"color"} />
         </Column>
         <Column size={12} sizeSM={4}>
