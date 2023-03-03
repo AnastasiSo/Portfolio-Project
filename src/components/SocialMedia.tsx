@@ -18,7 +18,9 @@ const SocialMedia: FunctionComponent<ISocialMediaProps> = ({
   return (
     <ul
       className={`social-media ${position === "row" ? "position-row" : ""}
-      ${mode === "text" ? "mode-text" : ""} ${className}`}
+      ${mode === "text" ? "mode-text" : ""} ${
+        className != null ? className : ""
+      }`}
     >
       <li>
         <a

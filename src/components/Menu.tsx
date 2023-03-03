@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 
 const Menu: FunctionComponent = () => {
-  const menuItems = ["About", "Projects", "Contacts", "Resume"];
+  const menuItems = ["Projects", "Contacts", "Resume"];
 
   return (
     <nav className="menu">

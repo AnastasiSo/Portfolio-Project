@@ -14,7 +14,7 @@ const CircularButton: FunctionComponent<ICircularButtonProps> = ({
 }) => {
   return (
     <button
-      className={`circular-button ${className}`}
+      className={`circular-button ${className != null ? className : ""}`}
       onClick={(newVal) => handlerOnClick(newVal)}
     >
       <Icon
