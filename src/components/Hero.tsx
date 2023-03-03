@@ -12,7 +12,7 @@ const Hero: FunctionComponent = () => {
           <div className="site-description">
             <p>
               Hi, I'm Anastasiia. I'm Frontend Developer. I use JavaScript and
-              React technologies. I looking for new opportunities for remote
+              React technologies. I'm looking for new opportunities for remote
               work. Open for participation in interesting projects.
             </p>
           </div>
