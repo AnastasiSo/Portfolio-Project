@@ -1,7 +1,20 @@
 import { FunctionComponent } from "react";
 
-const Menu: FunctionComponent = () => {
-  const menuItems = ["Projects", "Contacts", "Resume"];
+export interface IMenuProps {
+  title: string;
+  href: string;
+}
+
+const Menu: FunctionComponent<IMenuProps> = () => {
+  const menuItems = [
+    // { title: "About", href: "#" }, add About in version 1.0
+    { title: "Projects", href: "#projects" },
+    { title: "Contacts", href: "#contacts" }, // add id for Contacts component
+    {
+      title: "Resume",
+      href: "../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf",
+    },
+  ];
 
   return (
     <nav className="menu">
@@ -13,9 +26,19 @@ const Menu: FunctionComponent = () => {
               index === menuItems.length - 1 ? "resume" : ""
             }`}
           >
-            <a href="#" className="menu-link">
-              <span>{item}</span>
-            </a>
+            {index !== menuItems.length - 1 ? (
+              <a href={item.href} className="menu-link">
+                <span>{item.title}</span>
+              </a>
+            ) : (
+              <a
+                href={`${index === menuItems.length - 1 ? "#" : ""}`}
+                download={item.href}
+                className="menu-link"
+              >
+                <span>{item.title}</span>
+              </a>
+            )}
           </li>
         ))}
       </ul>
