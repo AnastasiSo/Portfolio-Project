@@ -5,7 +5,7 @@ import { FunctionComponent } from "react";
 const Projects: FunctionComponent = () => {
   return (
     <Container className="projects">
-      <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
       <Slider />
     </Container>
   );
