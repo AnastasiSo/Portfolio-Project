@@ -25,4 +25,10 @@
       text-decoration-line: underline;
     }
   }
+
+  &.color {
+    .icon {
+      fill: $dark-blue;
+    }
+  }
 }

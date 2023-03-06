@@ -1,8 +1,8 @@
+import Contacts from "@components/Contacts";
 import Footer from "@components/Footer";
 import Hero from "@components/Hero";
 import Navigation from "@components/Navigation";
 import Projects from "@components/Projects";
-import Slider from "@components/Slider";
 import { Fragment } from "react";
 import "../src/_styles/index.scss";
 
@@ -12,6 +12,7 @@ const App = () => {
       <Navigation />
       <Hero />
       <Projects />
+      <Contacts />
       <Footer />
     </Fragment>
   );

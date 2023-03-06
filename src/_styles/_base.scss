@@ -91,8 +91,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+a,
+:hover,
+:active,
+:visited {
   text-decoration: none;
+  color: #224a54;
 }
 
 ol,

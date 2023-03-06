@@ -7,16 +7,20 @@ type DisplayMode = "icon" | "text";
 export interface ISocialMediaProps {
   position?: Position;
   mode?: DisplayMode;
+  className?: string;
 }
 
 const SocialMedia: FunctionComponent<ISocialMediaProps> = ({
+  className,
   position,
   mode,
 }) => {
   return (
     <ul
       className={`social-media ${position === "row" ? "position-row" : ""}
-      ${mode === "text" ? "mode-text" : ""}`}
+      ${mode === "text" ? "mode-text" : ""} ${
+        className != null ? className : ""
+      }`}
     >
       <li>
         <a

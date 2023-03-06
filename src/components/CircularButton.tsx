@@ -4,19 +4,17 @@ import { FunctionComponent } from "react";
 type Direction = "left" | "top" | "right";
 export interface ICircularButtonProps {
   direction?: Direction;
-  size?: number;
   className?: string;
   handlerOnClick?: (newVal?) => void;
 }
 const CircularButton: FunctionComponent<ICircularButtonProps> = ({
   direction,
-  size,
   className,
   handlerOnClick,
 }) => {
   return (
     <button
-      className={`circular-button ${className}`}
+      className={`circular-button ${className != null ? className : ""}`}
       onClick={(newVal) => handlerOnClick(newVal)}
     >
       <Icon
