@@ -10,9 +10,7 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   currentIndex,
   setCurrentIndex,
 }) => {
-  const slideImg = {
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
+  const slideImg = slides[currentIndex].url;
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
@@ -20,7 +18,9 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
 
   return (
     <div className="slider-item-wrap">
-      <div className="slide-item" style={slideImg}></div>
+      <div className="slide-item">
+        <img src={require(slideImg).default} />
+      </div>
       <div className="dots-container">
         {slides.map((_, slideIndex) => (
           <div

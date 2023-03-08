@@ -3,11 +3,11 @@ import SliderItems from "@components/SliderItems";
 import { Fragment, FunctionComponent, useState } from "react";
 const Slider: FunctionComponent = () => {
   const slides = [
-    { url: "../img/project-1.gif", title: "Cards" },
-    { url: "../img/project-2.gif", title: "DragDrop" },
-    { url: "../img/project-3.gif", title: "Slider" },
-    { url: "../img/project-4.gif", title: "Board" },
-    { url: "../img/project-5.gif", title: "Game" },
+    { url: "/assets/project-1.gif", title: "Cards" },
+    { url: "/assets/project-2.gif", title: "DragDrop" },
+    { url: "/assets/project-3.gif", title: "Slider" },
+    { url: "/assets/project-4.gif", title: "Board" },
+    { url: "/assets/project-5.gif", title: "Game" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
