@@ -1,6 +1,16 @@
 import { FunctionComponent } from "react";
+import Card from "./Card";
 export interface ISliderItemsProps {
-  slides: Array<{ url: string; title: string }>;
+  slides: Array<{
+    url: string;
+    title: string;
+    card: {
+      title: string;
+      description: string;
+      codePen: string;
+      github: string;
+    };
+  }>;
   currentIndex: number;
   setCurrentIndex: (newVal: number) => void;
 }
@@ -17,9 +27,13 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+  const currentSlide = slides[currentIndex];
 
   return (
     <div className="slider-item-wrap">
+      {slides.map((_, slideIndex) => (
+        <Card key={slideIndex} data={currentSlide.card} />
+      ))}
       <div className="slide-item" style={slideImg}></div>
       <div className="dots-container">
         {slides.map((_, slideIndex) => (
