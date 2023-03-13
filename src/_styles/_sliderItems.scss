@@ -4,12 +4,13 @@
   margin: 0 auto;
 
   .card-wrap {
-    display: none;
+    opacity: 0;
+    transition: all 1s ease-out;
   }
 
   &:hover {
     .card-wrap {
-      display: block;
+      opacity: 0.4;
     }
   }
 
