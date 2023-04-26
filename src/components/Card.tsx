@@ -17,11 +17,11 @@ const Card: FunctionComponent<ICardProps> = ({ data }) => {
         <p className="card-description">
           {data.description}
           <br />
-          See code on{" "}
+          See code on&nbsp;
           <a className="card-link" href={data.github} target="blank">
             Git Hub
-          </a>{" "}
-          or view project on{" "}
+          </a>
+          &nbsp;or view project on&nbsp;
           <a className="card-link" href={data.codePen} target="blank">
             CodePen
           </a>
