@@ -13,20 +13,36 @@
     @include paragraph-font;
     margin-bottom: $size-unit * 6; // 24px
   }
-  .resume-link {
-    text-decoration: none;
-
-    &:hover {
-      transition: all 5s ease-out; // не работает
-      text-decoration: underline;
-    }
-  }
 
   .about-me-photo {
     display: flex;
     justify-content: flex-end;
-    img {
-      width: $size-unit * 88; // 352px;
+
+    @media (max-width: $breakpoint-sm) {
+      justify-content: center;
+      img {
+        width: $size-unit * 70; // 280px;
+      }
+    }
+    @media (min-width: $breakpoint-sm) {
+      img {
+        width: $size-unit * 63; // 252px;
+      }
+    }
+    @media (min-width: $breakpoint-lg) {
+      img {
+        width: $size-unit * 88; // 352px;
+      }
+    }
+  }
+  .about-me-description {
+    .languages {
+      @media (min-width: $breakpoint-sm) {
+        width: 60%;
+      }
+      @media (min-width: $breakpoint-md) {
+        width: 70%;
+      }
     }
   }
 }

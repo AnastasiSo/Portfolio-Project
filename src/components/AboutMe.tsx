@@ -19,7 +19,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
       <Container className="about-me">
         <h2>About.</h2>
         <Row>
-          <Column size={7}>
+          <Column size={12} sizeSM={6} sizeMD={7}>
             <div className="about-me-description">
               <p>
                 Hello! I am interested in working remotely as a Frontend
@@ -51,7 +51,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
               </p>
             </div>
           </Column>
-          <Column size={5}>
+          <Column size={12} sizeSM={6} sizeMD={5}>
             <div className="about-me-photo">
               <img
                 src={
@@ -63,14 +63,13 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
         </Row>
         <div>
           <h4>Languages</h4>
-          <p>
+          <p className="languages">
             My native language is Ukrainian, I also speak Russian fluently.
             Polish at A1 level. I speak English - at an intermediate level, and
             currently, I continue to study it. I'm used to solving complex
             problems and quickly understanding what is required of me.
           </p>
           <a
-            className="resume-link"
             href="../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf"
             download={
               "../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf"
