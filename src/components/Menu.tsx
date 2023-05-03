@@ -1,13 +1,8 @@
 import { FunctionComponent } from "react";
 
-export interface IMenuProps {
-  title: string;
-  href: string;
-}
-
-const Menu: FunctionComponent<IMenuProps> = () => {
+const Menu: FunctionComponent = () => {
   const menuItems = [
-    // { title: "About", href: "#" }, add About in version 1.0
+    // { title: "About", href: "#" }, add About in version 2.0
     { title: "Projects", href: "#projects" },
     { title: "Contacts", href: "#contacts" }, // add id for Contacts component
     {

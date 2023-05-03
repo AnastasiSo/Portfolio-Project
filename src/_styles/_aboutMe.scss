@@ -1,0 +1,25 @@
+.about-me {
+  margin-top: $size-unit * 29; // 116px
+
+  h2 {
+    @include h2-font;
+    margin-bottom: 64px;
+  }
+  .about-me-description {
+    h4 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  .resume-link {
+  }
+}
+
+.anastasiia-sorina-photo {
+  img {
+    width: 354px;
+    margin-left: 20px;
+  }
+}
