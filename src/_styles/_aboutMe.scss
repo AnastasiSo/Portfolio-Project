@@ -3,23 +3,30 @@
 
   h2 {
     @include h2-font;
-    margin-bottom: 64px;
+    margin-bottom: $size-unit * 16; // 64px
   }
-  .about-me-description {
-    h4 {
-      margin-bottom: 8px;
-    }
-    p {
-      margin-bottom: 24px;
-    }
+  h4 {
+    @include h4-font;
+    margin-bottom: $size-unit * 2; // 8px
+  }
+  p {
+    @include paragraph-font;
+    margin-bottom: $size-unit * 6; // 24px
   }
   .resume-link {
-  }
-}
+    text-decoration: none;
 
-.anastasiia-sorina-photo {
-  img {
-    width: 354px;
-    margin-left: 20px;
+    &:hover {
+      transition: all 5s ease-out; // не работает
+      text-decoration: underline;
+    }
+  }
+
+  .about-me-photo {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: $size-unit * 88; // 352px;
+    }
   }
 }

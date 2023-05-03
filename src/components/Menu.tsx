@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const Menu: FunctionComponent = () => {
   const menuItems = [
-    // { title: "About", href: "#" }, add About in version 2.0
+    { title: "About", href: "#about" },
     { title: "Projects", href: "#projects" },
     { title: "Contacts", href: "#contacts" }, // add id for Contacts component
     {

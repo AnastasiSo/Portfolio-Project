@@ -15,7 +15,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
   return (
     <Fragment>
       <Navigation />
-      {/* create component <facts> + <circle Button > */}
+      {/* create component <facts> */}
       <Container className="about-me">
         <h2>About.</h2>
         <Row>
@@ -52,7 +52,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
             </div>
           </Column>
           <Column size={5}>
-            <div className="anastasiia-sorina-photo">
+            <div className="about-me-photo">
               <img
                 src={
                   require("@public/assets/anastasiia_sorina_photo.png").default
@@ -71,7 +71,10 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
           </p>
           <a
             className="resume-link"
-            href="public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf"
+            href="../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf"
+            download={
+              "../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf"
+            }
           >
             LOAD RESUME
           </a>
@@ -83,27 +86,3 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
   );
 };
 export default AboutMe;
-
-// <menu />
-
-// <facts>
-
-// <circle Button >
-
-// </facts>
-
-// <aboutMeMain>
-
-// <row><column><aboutDescription1>
-
-// <column><Foto>
-
-// <row><column><aboutDescription2>
-
-// <linkResume>
-
-// </aboutMeMain>
-
-// <contact />
-
-// <footer />
