@@ -10,8 +10,8 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   currentIndex,
   setCurrentIndex,
 }) => {
-  const slideImg = slides[currentIndex].url;
-
+  // const slideImg = slides[currentIndex].url;
+  // ToDo: return when the error with pictures is eliminated
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
@@ -19,7 +19,7 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   return (
     <div className="slider-item-wrap">
       <div className="slide-item">
-        <img src={require(slideImg).default} />
+        {/* <img src={require(slideImg).default} /> */}
       </div>
       <div className="dots-container">
         {slides.map((_, slideIndex) => (
