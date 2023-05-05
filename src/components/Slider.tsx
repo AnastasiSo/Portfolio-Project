@@ -3,11 +3,61 @@ import SliderItems from "@components/SliderItems";
 import { Fragment, FunctionComponent, useState } from "react";
 const Slider: FunctionComponent = () => {
   const slides = [
-    { url: "/assets/project-1.gif", title: "Cards" },
-    { url: "/assets/project-2.gif", title: "DragDrop" },
-    { url: "/assets/project-3.gif", title: "Slider" },
-    { url: "/assets/project-4.gif", title: "Board" },
-    { url: "/assets/project-5.gif", title: "Game" },
+    {
+      url: "../img/project-1.gif",
+      title: "Cards",
+      card: {
+        title: "Cards",
+        description:
+          "This Cards-slider with clickable images. When clicked, the image enlarges.",
+        codePen: "https://codepen.io/AnastasiiaSorina/pen/yLxPMLv",
+        github: "https://github.com/AnastasiiaSorina/JS-Challenge-Cards",
+      },
+    },
+    {
+      url: "../img/project-2.gif",
+      title: "DragDrop",
+      card: {
+        title: "Drag & Drop",
+        description:
+          "Implemented the ability to drag the block to one of the three columns.",
+        codePen: "https://codepen.io/AnastasiiaSorina/pen/qBMVrdG",
+        github: "https://github.com/AnastasiiaSorina/JS-Challenge-DragDrop ",
+      },
+    },
+    {
+      url: "../img/project-3.gif",
+      title: "Slider",
+      card: {
+        title: "Slider",
+        description: "Slider with beautiful animation.",
+        codePen: "https://codepen.io/AnastasiiaSorina/pen/VwGrpeY",
+        github: "https://github.com/AnastasiiaSorina/JS-Challenge-Slider ",
+      },
+    },
+    {
+      url: "../img/project-4.gif",
+      title: "Board",
+      card: {
+        title: "Board",
+        description:
+          "A board that reacts to cursor movement. And randomly alternates color. Decorated with smooth animation.",
+        codePen: "https://codepen.io/AnastasiiaSorina/pen/mdGqWWr",
+        github: "https://github.com/AnastasiiaSorina/JS-Challenge-Board",
+      },
+    },
+    {
+      url: "../img/project-5.gif",
+      title: "Game",
+      card: {
+        title: "Game",
+        description:
+          "Game: the goal of which is to click on the maximum possible number of randomly pop-up circles. For the time you choose. You can choose the game time 10, 20, 30 seconds. At the end of your time, the score of the game will be waiting for you.",
+        codePen: "https://codepen.io/AnastasiiaSorina/pen/WNgXpjd",
+        github: "https://github.com/AnastasiiaSorina/JS-Challenge-Game ",
+      },
+    },
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

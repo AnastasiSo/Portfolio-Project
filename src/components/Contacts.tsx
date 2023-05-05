@@ -14,7 +14,7 @@ const Contacts: FunctionComponent = () => {
   return (
     <Container>
       <Row className="contacts">
-        <Column size={12} sizeSM={8}>
+        <Column size={12} sizeSM={10}>
           <div className="contacts-wrap">
             <h2 id="contacts">Contacts</h2>
             <p className="contacts-description">
@@ -25,9 +25,9 @@ const Contacts: FunctionComponent = () => {
             <p className="contacts-title">E-MAIL</p>
             <p className="contacts-mail">anastasiiasorina@gmail.com</p>
           </div>
-          <SocialMedia position="row" className={"color"} />
         </Column>
-        <Column size={12} sizeSM={4}>
+        <SocialMedia position="row" className={"color"} />
+        <Column size={12} sizeSM={2}>
           <div className="back-top-button">
             <CircularButton
               direction="top"
