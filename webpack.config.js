@@ -25,9 +25,9 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jp(e*)g|gif)$/,
+        test: /\.(pdf|png|svg|jp(e*)g|gif)$/,
         exclude: /node_modules/,
-        use: "file-loader",
+        use: "file-loader?name=[path][name].[ext]",
       },
     ],
   },
