@@ -16,7 +16,7 @@ const Contacts: FunctionComponent = () => {
       <Row className="contacts">
         <Column size={12} sizeSM={10}>
           <div className="contacts-wrap">
-            <h2>Contacts</h2>
+            <h2 id="contacts">Contacts</h2>
             <p className="contacts-description">
               I am currently looking for new opportunities, my inbox is always
               open. Whether you have a question or offers! Let's stay in touch
