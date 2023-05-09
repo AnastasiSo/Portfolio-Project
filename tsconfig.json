@@ -12,15 +12,12 @@
     "strict": false /* Enable all strict type-checking options. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
-    // "sourceMap": true,
-    // "inlineSources": true,
-    // "sourceRoot": "/",
     "baseUrl": "./",
     "paths": {
       "@public/*": ["public/*"],
       "@components/*": ["src/components/*"]
     }
   },
-  "include": ["src", "types", "types"],
+  "include": ["src", "types"],
   "exclude": ["node_modules", "dist"] // *** The files to not type check ***
 }
