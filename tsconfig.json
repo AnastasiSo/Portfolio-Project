@@ -1,34 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
-    "module": "ESNext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
-    "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
+    "target": "ES6",
+    "module": "ES6",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */ /* Type declaration files to be included in compilation. */,
-    "lib": [
-      "dom",
-      "es2015",
-      "es2016",
-      "esnext"
-    ] /* Specify library files to be included in the compilation. */,
-    "jsx": "react-jsx" /* Specify JSX code generation: 'preserve', 'react-native', 'react' or 'react-jsx'. */,
+
+    "jsx": "preserve",
     "noEmit": true /* Do not emit outputs. */,
-    "isolatedModules": false /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
-    "skipLibCheck": true /* Skip type checking of declaration files. */,
     "strict": false /* Enable all strict type-checking options. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
-    "sourceMap": true,
-    "inlineSources": true,
-    "sourceRoot": "/",
+    // "sourceMap": true,
+    // "inlineSources": true,
+    // "sourceRoot": "/",
     "baseUrl": "./",
     "paths": {
       "@public/*": ["public/*"],
       "@components/*": ["src/components/*"]
     }
   },
-  "include": ["src/custom.d.ts", "src"],
+  "include": ["src", "types", "types"],
   "exclude": ["node_modules", "dist"] // *** The files to not type check ***
 }
