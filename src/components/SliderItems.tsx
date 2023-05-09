@@ -20,10 +20,8 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   currentIndex,
   setCurrentIndex,
 }) => {
-  const slideImg = {
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
-
+  // const slideImg = slides[currentIndex].url;
+  // ToDo: return when the error with pictures is eliminated
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };

@@ -57,6 +57,7 @@ const Slider: FunctionComponent = () => {
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-Game ",
       },
     },
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

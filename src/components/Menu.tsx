@@ -7,7 +7,7 @@ export interface IMenuProps {
 
 const Menu: FunctionComponent<IMenuProps> = () => {
   const menuItems = [
-    // { title: "About", href: "#" }, add About in version 2.0
+    // { title: "About", href: "#" }, TODO: add About in version 2.0
     { title: "Projects", href: "#projects" },
     { title: "Contacts", href: "#contacts" },
     {
