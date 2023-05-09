@@ -2,8 +2,9 @@ import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 
 export interface IMenuProps {
-  title: string;
-  href: string;
+  // TODO: check if this properties are used
+  title?: string;
+  href?: string;
 }
 
 const Menu: FunctionComponent<IMenuProps> = () => {
