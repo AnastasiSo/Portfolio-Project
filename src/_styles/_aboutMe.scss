@@ -1,4 +1,5 @@
 .about-me {
+  position: relative;
   margin-top: $size-unit * 29; // 116px
 
   h2 {
@@ -14,34 +15,47 @@
     margin-bottom: $size-unit * 6; // 24px
   }
 
-  .about-me-photo {
-    display: flex;
-    justify-content: flex-end;
+  .aboutMe-photo {
+    float: right;
+    padding-left: $size-unit * 16; // 64px
+    padding-bottom: $size-unit * 6; // 24px
 
     @media (max-width: $breakpoint-sm) {
-      justify-content: center;
-      img {
-        width: $size-unit * 70; // 280px;
-      }
+      display: none;
     }
+
     @media (min-width: $breakpoint-sm) {
-      img {
-        width: $size-unit * 63; // 252px;
-      }
+      width: $size-unit * 63; // 252px;
     }
+
     @media (min-width: $breakpoint-lg) {
-      img {
-        width: $size-unit * 88; // 352px;
-      }
+      width: $size-unit * 104; // 352px + padding 64px
+    }
+  }
+  .aboutMe-photo-mobile {
+    display: none;
+
+    @media (max-width: $breakpoint-sm) {
+      padding-top: $size-unit * 9; // 36px
+      display: block;
+      width: $size-unit * 70; // 280px;
+      align-items: center;
     }
   }
   .about-me-description {
-    .languages {
-      @media (min-width: $breakpoint-sm) {
-        width: 60%;
+    .abut-me-resume {
+      position: relative;
+      text-decoration: underline transparent;
+
+      @media (max-width: $breakpoint-sm) {
+        text-decoration-color: $dark-blue;
       }
-      @media (min-width: $breakpoint-md) {
-        width: 70%;
+      @media (min-width: $breakpoint-sm) {
+        transition: text-decoration 300ms ease;
+
+        &:hover {
+          text-decoration-color: $dark-blue;
+        }
       }
     }
   }

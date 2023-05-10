@@ -18,10 +18,15 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
       <Container className="about-me">
         <h2>About.</h2>
         <div className="about-me-description">
+          <img
+            className="aboutMe-photo"
+            src={require("@public/assets/anastasiia_sorina_photo.png").default}
+          ></img>
           <p>
             Hello! I am interested in working remotely as a Frontend Developer.
             I live in England, Keswick.
           </p>
+
           <h4>EDUCATION</h4>
           <p>
             I have higher education. I completed Markup Developer courses and
@@ -61,7 +66,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
             LOAD RESUME
           </a>
           <img
-            className="about-me-photo"
+            className="aboutMe-photo-mobile"
             src={require("@public/assets/anastasiia_sorina_photo.png").default}
           ></img>
         </div>
