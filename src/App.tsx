@@ -11,6 +11,7 @@ import "../src/_styles/index.scss";
 const App = () => {
   return (
     <Fragment>
+      <Navigation />
       <Routes>
         {/* // TODO: create folder "pages" with components HomePage and AboutMePage. */}
         {/* Use HomePage component for path="/" */}
@@ -18,17 +19,17 @@ const App = () => {
           path="/"
           element={
             <Fragment>
-              <Navigation />
               <Hero />
               <Projects />
               <Contacts />
-              <Footer />
             </Fragment>
           }
         />
         <Route path="/about" element={<AboutMe />} />
-        <Route path="*" element={<div>NoMatch </div>} />
+        {/* TODO: create NoMatchPage component */}
+        <Route path="*" element={<div>404 </div>} />
       </Routes>
+      <Footer />
     </Fragment>
   );
 };
