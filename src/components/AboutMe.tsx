@@ -1,6 +1,4 @@
 import Contacts from "@components/Contacts";
-import Footer from "@components/Footer";
-import Navigation from "@components/Navigation";
 import Container from "@components/layout/Container";
 import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { Fragment, FunctionComponent } from "react";
@@ -13,14 +11,13 @@ export interface IAboutMeProps {
 const AboutMe: FunctionComponent<IAboutMeProps> = () => {
   return (
     <Fragment>
-      <Navigation />
       {/* create component <facts> */}
       <Container className="about-me">
         <h2>About.</h2>
         <div className="about-me-description">
           <img
             className="aboutMe-photo"
-            src={require("@public/assets/anastasiia_sorina_photo.png").default}
+            src={require("@public/assets/anastasiiaSorinaPhoto.png").default}
           ></img>
           <p>
             Hello! I am interested in working remotely as a Frontend Developer.
@@ -42,7 +39,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
             I have experience running my own business in the beauty industry,
             there were about 5 people in my subordination. Master of sports in
             sports acrobatics. Have teaching experience. Worked as a Coach in a
-            children's sports school for 3 years.{" "}
+            children's sports school for 3 years.
           </p>
           <h4>HOBBIES</h4>
           <p>
@@ -67,12 +64,11 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
           </a>
           <img
             className="aboutMe-photo-mobile"
-            src={require("@public/assets/anastasiia_sorina_photo.png").default}
+            src={require("@public/assets/anastasiiaSorinaPhoto.png").default}
           ></img>
         </div>
       </Container>
       <Contacts />
-      <Footer />
     </Fragment>
   );
 };
