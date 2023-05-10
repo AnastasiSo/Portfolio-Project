@@ -6,8 +6,8 @@ import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { Fragment, FunctionComponent } from "react";
 
 export interface IAboutMeProps {
-  title: string;
-  href: string;
+  title?: string;
+  href?: string;
 }
 
 const AboutMe: FunctionComponent<IAboutMeProps> = () => {
