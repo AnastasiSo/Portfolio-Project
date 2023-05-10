@@ -8,6 +8,7 @@
 }
 
 .mobile-menu {
+  // TODO: Disable scrolling when opening the mobile menu.
   @media (max-width: $breakpoint-sm) {
     padding: $size-unit * 7 $size-unit * 4; // 28px 16px
     position: fixed;
@@ -16,6 +17,7 @@
     bottom: 0;
     left: 0;
     background-color: $black;
+    z-index: 99;
 
     & > .row:first-child {
       width: 100%;
