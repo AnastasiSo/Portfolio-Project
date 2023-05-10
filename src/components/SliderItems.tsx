@@ -23,6 +23,7 @@ const SliderItems: FunctionComponent<ISliderItemsProps> = ({
   const slideImg = {
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
+
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
