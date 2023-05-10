@@ -7,6 +7,7 @@ module.exports = {
   output: {
     filename: "bundle.[fullhash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -50,5 +51,6 @@ module.exports = {
     hot: "only",
     compress: true,
     open: true,
+    historyApiFallback: true,
   },
 };
