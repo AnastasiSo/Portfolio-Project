@@ -5,7 +5,7 @@ import Row from "@components/layout/Row";
 import SocialMedia from "@components/SocialMedia";
 import { FunctionComponent } from "react";
 
-// TODO: made interface for Contacts (with header?: string ) .. reuse for about me page.
+// TODO: create interface for Contacts (with header?: string ) .. reuse for about me page.
 
 const Contacts: FunctionComponent = () => {
   const handleScrollToTop = () => {

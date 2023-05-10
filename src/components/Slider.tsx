@@ -1,10 +1,16 @@
 import CircularButton from "@components/CircularButton";
 import SliderItems from "@components/SliderItems";
+import projectBoardImg from "@public/assets/projects/projectBoard.gif";
+import projectCardImg from "@public/assets/projects/projectCards.gif";
+import projectDragDropImg from "@public/assets/projects/projectDragDrop.gif";
+import projectGameImg from "@public/assets/projects/projectGame.gif";
+import projectSliderImg from "@public/assets/projects/projectSlider.gif";
 import { Fragment, FunctionComponent, useState } from "react";
+
 const Slider: FunctionComponent = () => {
   const slides = [
     {
-      url: "../img/project-1.gif",
+      url: projectCardImg,
       title: "Cards",
       card: {
         title: "Cards",
@@ -15,7 +21,7 @@ const Slider: FunctionComponent = () => {
       },
     },
     {
-      url: "../img/project-2.gif",
+      url: projectDragDropImg,
       title: "DragDrop",
       card: {
         title: "Drag & Drop",
@@ -26,7 +32,7 @@ const Slider: FunctionComponent = () => {
       },
     },
     {
-      url: "../img/project-3.gif",
+      url: projectSliderImg,
       title: "Slider",
       card: {
         title: "Slider",
@@ -36,7 +42,7 @@ const Slider: FunctionComponent = () => {
       },
     },
     {
-      url: "../img/project-4.gif",
+      url: projectBoardImg,
       title: "Board",
       card: {
         title: "Board",
@@ -47,7 +53,7 @@ const Slider: FunctionComponent = () => {
       },
     },
     {
-      url: "../img/project-5.gif",
+      url: projectGameImg,
       title: "Game",
       card: {
         title: "Game",

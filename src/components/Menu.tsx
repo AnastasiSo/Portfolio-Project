@@ -1,8 +1,10 @@
+import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 
 export interface IMenuProps {
-  title: string;
-  href: string;
+  // TODO: check if this properties are used
+  title?: string;
+  href?: string;
 }
 
 const Menu: FunctionComponent<IMenuProps> = () => {
@@ -10,10 +12,7 @@ const Menu: FunctionComponent<IMenuProps> = () => {
     // { title: "About", href: "#" }, TODO: add About in version 2.0
     { title: "Projects", href: "#projects" },
     { title: "Contacts", href: "#contacts" },
-    {
-      title: "Resume",
-      href: "../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf",
-    },
+    { title: "Resume", href: resumePDF },
   ];
 
   return (
@@ -32,8 +31,8 @@ const Menu: FunctionComponent<IMenuProps> = () => {
               </a>
             ) : (
               <a
-                href={`${index === menuItems.length - 1 ? "#" : ""}`}
-                download={item.href}
+                href={`${index === menuItems.length - 1 ? item.href : ""}`}
+                download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
                 className="menu-link"
               >
                 <span>{item.title}</span>

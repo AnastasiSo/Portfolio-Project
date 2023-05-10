@@ -1,7 +1,8 @@
+import SocialMedia from "@components/SocialMedia";
 import Column from "@components/layout/Column";
 import Container from "@components/layout/Container";
 import Row from "@components/layout/Row";
-import SocialMedia from "@components/SocialMedia";
+import avatar from "@public/assets/avatar.png";
 import { FunctionComponent } from "react";
 
 const Hero: FunctionComponent = () => {
@@ -25,7 +26,7 @@ const Hero: FunctionComponent = () => {
         </Column>
         <Column size={7}>
           <div className="avatar">
-            <img src={require("@public/assets/avatar.png").default}></img>
+            <img src={avatar}></img>
           </div>
         </Column>
       </Row>
