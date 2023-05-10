@@ -9,8 +9,10 @@
     display: none;
   }
 }
+
 @media (min-width: $breakpoint-md) {
   .slider {
+    width: 90%;
     .circular-button {
       display: block;
       top: 50%;

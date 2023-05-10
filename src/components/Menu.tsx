@@ -1,14 +1,12 @@
+import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 
 const Menu: FunctionComponent = () => {
   const menuItems = [
     { title: "About", href: "#about" },
     { title: "Projects", href: "#projects" },
-    { title: "Contacts", href: "#contacts" }, // add id for Contacts component
-    {
-      title: "Resume",
-      href: "../../public/assets/AnastasiiaSorinaFrontEndDeveloper.pdf",
-    },
+    { title: "Contacts", href: "#contacts" },
+    { title: "Resume", href: resumePDF },
   ];
 
   return (
@@ -27,8 +25,8 @@ const Menu: FunctionComponent = () => {
               </a>
             ) : (
               <a
-                href={`${index === menuItems.length - 1 ? "#" : ""}`}
-                download={item.href}
+                href={`${index === menuItems.length - 1 ? item.href : ""}`}
+                download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
                 className="menu-link"
               >
                 <span>{item.title}</span>

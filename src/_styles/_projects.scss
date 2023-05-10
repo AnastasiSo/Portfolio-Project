@@ -1,6 +1,7 @@
 .projects {
   h2 {
     @include h2-font;
+    margin-bottom: $size-unit * 6; // 24px
   }
 }
 

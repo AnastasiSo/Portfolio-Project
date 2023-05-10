@@ -1,21 +1,23 @@
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.tsx"),
   mode: "development",
   output: {
-    publicPath: "/",
+    filename: "bundle.[fullhash].js",
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
       {
-        test: /\.[jt]sx?$/,
-        use: ["babel-loader"],
+        test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
+        use: ["babel-loader"],
       },
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -23,21 +25,15 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-              encoding: false,
-            },
-          },
-        ],
+        test: /\.(pdf|png|svg|jp(e*)g|gif)$/,
+        exclude: /node_modules/,
+        use: "file-loader?name=[path][name].[ext]",
       },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx"],
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    extensions: [".*", ".js", ".jsx", ".tsx", ".ts"],
     alias: {
       "@public": path.join(__dirname, "public"),
       "@components": path.join(__dirname, "src", "components"),
