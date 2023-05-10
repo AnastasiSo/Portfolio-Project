@@ -20,20 +20,4 @@ const App = () => {
   );
 };
 
-{
-  /* <Menu />
-      <Hero>
-        <SocialMedia />
-      </Hero>
-      <Projects>
-        <Slider>
-          <Slide />
-        </Slider>
-      </Projects> 
-      <Projects>     
-        <Rest />
-      </Projects>
-      <Contacts />
-      <Footer /> */
-}
 export default App;
