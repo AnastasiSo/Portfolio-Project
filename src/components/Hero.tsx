@@ -1,4 +1,4 @@
-import SocialMedia from "@components/SocialMedia";
+import SocialMedia from "@components/Navigation/SocialMedia";
 import Column from "@components/layout/Column";
 import Container from "@components/layout/Container";
 import Row from "@components/layout/Row";

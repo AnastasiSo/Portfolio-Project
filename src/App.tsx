@@ -1,12 +1,10 @@
-import AboutMe from "@components/AboutMe";
-import Contacts from "@components/Contacts";
-import Footer from "@components/Footer";
-import Hero from "@components/Hero";
-import Navigation from "@components/Navigation";
-import Projects from "@components/Projects";
+import Footer from "@components/Footer/Footer";
+import Navigation from "@components/Navigation/Navigation";
 import { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
 import "../src/_styles/index.scss";
+import AboutMe from "./pages/AboutMe";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
@@ -15,16 +13,7 @@ const App = () => {
       <Routes>
         {/* // TODO: create folder "pages" with components HomePage and AboutMePage. */}
         {/* Use HomePage component for path="/" */}
-        <Route
-          path="/"
-          element={
-            <Fragment>
-              <Hero />
-              <Projects />
-              <Contacts />
-            </Fragment>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutMe />} />
         {/* TODO: create NoMatchPage component */}
         <Route path="*" element={<div>404 </div>} />
