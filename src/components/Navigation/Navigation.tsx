@@ -1,9 +1,9 @@
-import Menu from "@components/Navigation/Menu";
-import MobileMenu from "@components/Navigation/MobileMenu";
 import Logo from "@components/icon/Logo";
 import Column from "@components/layout/Column";
 import Container from "@components/layout/Container";
 import Row from "@components/layout/Row";
+import Menu from "@components/navigation/Menu";
+import MobileMenu from "@components/navigation/MobileMenu";
 import { FunctionComponent } from "react";
 
 const Navigation: FunctionComponent = () => {

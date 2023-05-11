@@ -1,6 +1,6 @@
-import SocialMedia from "@components/Navigation/SocialMedia";
 import Column from "@components/layout/Column";
 import Row from "@components/layout/Row";
+import SocialMedia from "@components/navigation/SocialMedia";
 import { Fragment, FunctionComponent, useState } from "react";
 import Logo from "../icon/Logo";
 import Menu from "./Menu";

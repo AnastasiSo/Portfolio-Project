@@ -1,5 +1,5 @@
 import Container from "@components/layout/Container";
-import Slider from "@components/Slider/Slider";
+import Slider from "@components/slider/Slider";
 import { FunctionComponent } from "react";
 
 const Projects: FunctionComponent = () => {

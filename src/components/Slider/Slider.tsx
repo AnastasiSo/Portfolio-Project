@@ -1,5 +1,5 @@
-import CircularButton from "@components/Navigation/CircularButton";
-import SliderItems from "@components/Slider/SliderItems";
+import CircularButton from "@components/navigation/CircularButton";
+import SliderItems from "@components/slider/SliderItems";
 import projectBoardImg from "@public/assets/projects/projectBoard.gif";
 import projectCardImg from "@public/assets/projects/projectCards.gif";
 import projectDragDropImg from "@public/assets/projects/projectDragDrop.gif";

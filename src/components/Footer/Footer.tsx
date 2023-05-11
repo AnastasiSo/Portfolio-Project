@@ -1,5 +1,5 @@
-import SocialMedia from "@components/Navigation/SocialMedia";
 import Container from "@components/layout/Container";
+import SocialMedia from "@components/navigation/SocialMedia";
 import { FunctionComponent } from "react";
 import Column from "../layout/Column";
 import Row from "../layout/Row";
