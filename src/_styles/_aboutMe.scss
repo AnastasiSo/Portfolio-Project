@@ -2,6 +2,10 @@
   position: relative;
   margin-top: $size-unit * 29; // 116px
 
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 10; // 40px
+  }
+
   h2 {
     @include h2-font;
     margin-bottom: $size-unit * 16; // 64px
@@ -38,8 +42,9 @@
     @media (max-width: $breakpoint-sm) {
       padding-top: $size-unit * 9; // 36px
       display: block;
-      width: $size-unit * 70; // 280px;
-      align-items: center;
+      max-width: $size-unit * 70; // 280px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .about-me-description {

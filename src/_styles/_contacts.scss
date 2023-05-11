@@ -1,5 +1,6 @@
 .contacts {
   color: $dark-blue;
+  margin-top: $size-unit * 6; // 24px
   .column {
     display: flex;
     justify-content: flex-end;
@@ -40,8 +41,6 @@
 
 @media (max-width: $breakpoint-sm) {
   .contacts {
-    margin-top: $size-unit * 42; // 168px
-
     .contacts-title {
       margin-top: $size-unit * 6; // 24px
     }
@@ -92,7 +91,6 @@
 
 @media (min-width: $breakpoint-md) {
   .contacts {
-    margin-top: $size-unit * 6; // 24px
     margin-left: $size-unit * 30; // 120px
 
     .contacts-description {
