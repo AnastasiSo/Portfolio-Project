@@ -41,6 +41,7 @@
 
 @media (max-width: $breakpoint-sm) {
   .contacts {
+    margin-top: $size-unit * 30; // 120px
     .contacts-title {
       margin-top: $size-unit * 6; // 24px
     }
