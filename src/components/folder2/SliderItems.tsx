@@ -1,4 +1,4 @@
-import Card from "@components/Projects/Card";
+import Card from "@components/folder1/Card";
 import { FunctionComponent } from "react";
 export interface ISliderItemsProps {
   slides: Array<{

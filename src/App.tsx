@@ -11,8 +11,6 @@ const App = () => {
     <Fragment>
       <Navigation />
       <Routes>
-        {/* // TODO: create folder "pages" with components HomePage and AboutMePage. */}
-        {/* Use HomePage component for path="/" */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutMe />} />
         {/* TODO: create NoMatchPage component */}
