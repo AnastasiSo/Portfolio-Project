@@ -4,7 +4,7 @@ import { FunctionComponent } from "react";
 import Column from "../layout/Column";
 import Row from "../layout/Row";
 
-const Footer: FunctionComponent = () => {
+const MainFooter: FunctionComponent = () => {
   return (
     <Container className="footer">
       <Row>
@@ -34,4 +34,4 @@ const Footer: FunctionComponent = () => {
     </Container>
   );
 };
-export default Footer;
+export default MainFooter;
