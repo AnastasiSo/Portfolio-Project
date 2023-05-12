@@ -2,6 +2,7 @@ import Contacts from "@components/Contacts";
 import Container from "@components/layout/Container";
 import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { Fragment, FunctionComponent } from "react";
+import Facts from "../components/aboutMe/Facts";
 
 export interface IAboutMeProps {
   title?: string;
@@ -14,17 +15,20 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
       {/* create component <facts> */}
       <Container className="about-me">
         <h2>About.</h2>
+        <Facts />
         <div className="about-me-description">
-          <img
-            className="aboutMe-photo"
-            src={require("@public/assets/anastasiiaSorinaPhoto.png").default}
-          ></img>
           <p>
             Hello! I am interested in working remotely as a Frontend Developer.
             I live in England, Keswick.
           </p>
 
+          <img
+            className="aboutMe-photo"
+            src={require("@public/assets/anastasiiaSorinaPhoto.png").default}
+          ></img>
+
           <h4>EDUCATION</h4>
+
           <p>
             I have higher education. I completed Markup Developer courses and
             have a successful internship experience at Artland as a Frontend
