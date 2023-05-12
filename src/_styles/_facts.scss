@@ -1,12 +1,12 @@
 .facts {
   display: flex;
-  margin-bottom: $size-unit * 8; // 32px
+  // margin-bottom: $size-unit * 8; // 32px
   width: 100%;
+  height: 120px;
 
   .facts-item {
     @include h5-font;
     width: 80%;
-    height: 120px;
   }
   .circularButton {
     width: 20%;
