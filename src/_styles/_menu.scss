@@ -11,6 +11,7 @@
 
   @media (min-width: $breakpoint-sm) {
     display: block;
+
     .menu-wrap {
       display: flex;
       justify-content: flex-end;
@@ -21,7 +22,8 @@
         display: flex;
         align-content: center;
         margin-left: $size-unit * 8; // 32px
-        transition: all 0.5s ease-out;
+        transition: all 0.8s ease-out;
+        border-bottom: inset $border-unit transparent; // 1px
 
         &:hover {
           border-bottom: inset $border-unit $dark-blue; // 1px
@@ -41,11 +43,8 @@
 
         &:hover {
           background-color: $dark-blue;
-
-          .menu-link {
-            & > span {
-              color: $white-10;
-            }
+          span {
+            color: $white-10;
           }
         }
       }

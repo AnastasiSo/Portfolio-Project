@@ -1,39 +1,45 @@
-import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
+import { NavLink } from "react-router-dom";
+
+// TODO: Find a solution for the behavior of the projects and contacts buttons when the checkout page is active.
 
 const Menu: FunctionComponent = () => {
-  const menuItems = [
-    { title: "About", href: "#about" },
-    { title: "Projects", href: "#projects" },
-    { title: "Contacts", href: "#contacts" },
-    { title: "Resume", href: resumePDF },
-  ];
-
   return (
     <nav className="menu">
       <ul className="menu-wrap">
-        {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className={`menu-items ${
-              index === menuItems.length - 1 ? "resume" : ""
-            }`}
+        <li className="menu-items">
+          <NavLink to="/" className="menu-link">
+            <span>Home</span>
+          </NavLink>
+        </li>
+
+        <li className="menu-items">
+          <NavLink to="/about" className="menu-link">
+            <span>About</span>
+          </NavLink>
+        </li>
+
+        <li className="menu-items home-page">
+          <a href="#projects" className="menu-link">
+            <span>Projects</span>
+          </a>
+        </li>
+
+        <li className="menu-items home-page">
+          <a href="#contacts" className="menu-link">
+            <span>Contacts</span>
+          </a>
+        </li>
+
+        <li className="menu-items">
+          <a
+            href="resumePDF"
+            download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
+            className="menu-link resume"
           >
-            {index !== menuItems.length - 1 ? (
-              <a href={item.href} className="menu-link">
-                <span>{item.title}</span>
-              </a>
-            ) : (
-              <a
-                href={`${index === menuItems.length - 1 ? item.href : ""}`}
-                download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
-                className="menu-link"
-              >
-                <span>{item.title}</span>
-              </a>
-            )}
-          </li>
-        ))}
+            <span>Resume</span>
+          </a>
+        </li>
       </ul>
     </nav>
   );
