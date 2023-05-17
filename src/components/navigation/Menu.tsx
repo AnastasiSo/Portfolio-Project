@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { NavLink } from "react-router-dom";
 
-// TODO: Find a solution for the behavior of the projects and contacts buttons when the checkout page is active.
+// TODO: Find a solution for the behavior of contacts buttons when the checkout page is active.
 
 const Menu: FunctionComponent = () => {
   return (
