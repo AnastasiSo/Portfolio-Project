@@ -13,8 +13,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutMe />} />
-        {/* TODO: create NoMatchPage component */}
-        <Route path="*" element={<div>404 </div>} />
+        {/* TODO: create NoMatchPage component 
+        <Route path="*" element={<div>404 </div>} />*/}
       </Routes>
       <MainFooter />
     </Fragment>
