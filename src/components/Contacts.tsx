@@ -1,8 +1,8 @@
-import CircularButton from "@components/CircularButton";
 import Column from "@components/layout/Column";
 import Container from "@components/layout/Container";
 import Row from "@components/layout/Row";
-import SocialMedia from "@components/SocialMedia";
+import CircularButton from "@components/navigation/CircularButton";
+import SocialMedia from "@components/navigation/SocialMedia";
 import { FunctionComponent } from "react";
 
 // TODO: create interface for Contacts (with header?: string ) .. reuse for about me page.

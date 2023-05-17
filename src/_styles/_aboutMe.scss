@@ -1,0 +1,67 @@
+.about-me {
+  position: relative;
+  margin-top: $size-unit * 29; // 116px
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 10; // 40px
+  }
+
+  h2 {
+    @include h2-font;
+    margin-bottom: $size-unit * 16; // 64px
+  }
+  h4 {
+    @include h4-font;
+    margin-bottom: $size-unit * 2; // 8px
+  }
+  p {
+    @include paragraph-font;
+    margin-bottom: $size-unit * 6; // 24px
+  }
+
+  .aboutMe-photo {
+    float: right;
+    padding-left: $size-unit * 16; // 64px
+    padding-bottom: $size-unit * 6; // 24px
+
+    @media (max-width: $breakpoint-sm) {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      width: $size-unit * 63; // 252px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: $size-unit * 104; // 352px + padding 64px
+    }
+  }
+  .aboutMe-photo-mobile {
+    display: none;
+
+    @media (max-width: $breakpoint-sm) {
+      padding-top: $size-unit * 9; // 36px
+      display: block;
+      max-width: $size-unit * 70; // 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .about-me-description {
+    .abut-me-resume {
+      position: relative;
+      text-decoration: underline transparent;
+
+      @media (max-width: $breakpoint-sm) {
+        text-decoration-color: $dark-blue;
+      }
+      @media (min-width: $breakpoint-sm) {
+        transition: text-decoration 300ms ease;
+
+        &:hover {
+          text-decoration-color: $dark-blue;
+        }
+      }
+    }
+  }
+}

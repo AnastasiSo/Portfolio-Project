@@ -63,6 +63,7 @@
       right: unset;
       left: $size-unit * 10; // 40px
     }
+
     h1 {
       margin-top: $size-unit * 62; // 248px
       margin-bottom: $size-unit * 25; // 100px
@@ -72,6 +73,10 @@
       img {
         margin-right: $size-unit * 30; // 120px
       }
+    }
+
+    .contacts {
+      margin-left: $size-unit * 30; // 120px
     }
   }
   @media (min-width: $breakpoint-lg) {
