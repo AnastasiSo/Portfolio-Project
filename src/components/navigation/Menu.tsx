@@ -20,13 +20,13 @@ const Menu: FunctionComponent = () => {
         </li>
 
         <li className="menu-items home-page">
-          <a href="#projects" className="menu-link">
+          <a href="/#projects" className="menu-link">
             <span>Projects</span>
           </a>
         </li>
 
-        <li className="menu-items home-page">
-          <a href="#contacts" className="menu-link">
+        <li className="menu-items">
+          <a href="/#contacts" className="menu-link">
             <span>Contacts</span>
           </a>
         </li>
