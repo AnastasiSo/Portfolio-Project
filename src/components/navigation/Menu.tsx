@@ -1,3 +1,4 @@
+import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -33,7 +34,7 @@ const Menu: FunctionComponent = () => {
 
         <li className="menu-items">
           <a
-            href="resumePDF"
+            href={resumePDF}
             download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
             className="menu-link resume"
           >
