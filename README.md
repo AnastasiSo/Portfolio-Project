@@ -44,7 +44,7 @@ To run app use
 - [x] Developed website layout.
 - [x] Started the implementation of the layout, the creation of basic components.
 
- ## Stage 2 |✔| **November - December 2022**
+ ## Stage 2 |✔| **November 2022 - December 2022**
 - [x] I found a [designer](https://www.linkedin.com/in/amiakshylo/) to improve communication skills in a team and recreate a real environment for working on a project. 
   With the distribution of roles and responsibilities. Systematic calls and discussions in search of the best solution.
 - [x] Introducing a designer to the team, explaining the structure and rules of work.
@@ -54,14 +54,14 @@ To run app use
 - [x] Creation of content for the site.
 - [x] Design approval.
 
-## Stage 3 | **January 2023 - now**
+## Stage 3 |✔| **January 2023 - March 2023**
 - [x] Description of tasks and expectations from MVP.
 - [x] Description of tasks and expectations from the final result of version 1.0
 - [x] Start of MVP development.
 - [x] Testing.
-- [ ] Deployment MVP.
+- [x] Deployment MVP. [Here](https://superb-phoenix-5608ef.netlify.app/).
 
-## Stage 4
+## Stage 4 | **April 2023 - now**
 - [ ] Development of version 1.0
 - [ ] Testing
 - [ ] Deployment
