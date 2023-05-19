@@ -55,6 +55,7 @@ To run app use
 - [x] Design approval.
 
 ## Stage 3 |✔| **January 2023 - March 2023**
+
 - [x] Description of tasks and expectations from MVP.
 - [x] Description of tasks and expectations from the final result of version 1.0
 - [x] Start of MVP development.
