@@ -1,6 +1,7 @@
 import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 // TODO: Find a solution for the behavior of contacts buttons when the checkout page is active.
 
@@ -19,17 +20,17 @@ const Menu: FunctionComponent = () => (
         </NavLink>
       </li>
 
-      <li className="menu-items home-page">
-        <a href="/#projects" className="menu-link">
-          <span>Projects</span>
-        </a>
-      </li>
+        <li className="menu-items home-page">
+          <NavHashLink to="/#projects" smooth>
+            Projects
+          </NavHashLink>
+        </li>
 
-      <li className="menu-items">
-        <a href="/#contacts" className="menu-link">
-          <span>Contacts</span>
-        </a>
-      </li>
+        <li className="menu-items">
+          <NavHashLink to="#contacts" smooth>
+            Contacts
+          </NavHashLink>
+        </li>
 
       <li className="menu-items">
         <a
