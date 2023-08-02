@@ -1,0 +1,23 @@
+.no-mach-page {
+  text-align: center;
+  h1 {
+    color: transparent;
+    font-family: "Inter";
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 300px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $dark-blue;
+  }
+  h3 {
+    @include h3-font;
+  }
+  p {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .circular-button {
+    margin: auto;
+  }
+}
