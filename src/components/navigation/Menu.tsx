@@ -1,3 +1,4 @@
+import resumePDF from "@public/assets/AnastasiiaSorinaFrontEndDeveloperCV.pdf";
 import { FunctionComponent } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -30,17 +31,18 @@ const Menu: FunctionComponent = () => (
         </a>
       </li>
 
-      <li className="menu-items">
-        <a
-          href="resumePDF"
-          download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
-          className="menu-link resume"
-        >
-          <span>Resume</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-);
+        <li className="menu-items">
+          <a
+            href={resumePDF}
+            download="AnastasiiaSorinaFrontEndDeveloperCV.pdf"
+            className="menu-link resume"
+          >
+            <span>Resume</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Menu;
