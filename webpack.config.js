@@ -38,6 +38,7 @@ module.exports = {
     alias: {
       "@public": path.join(__dirname, "public"),
       "@components": path.join(__dirname, "src", "components"),
+      "@pages": path.join(__dirname, "pages", "pages"),
     },
   },
   plugins: [

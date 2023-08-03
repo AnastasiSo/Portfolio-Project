@@ -1,11 +1,11 @@
 import MainFooter from "@components/footer/MainFooter";
 import Navigation from "@components/navigation/Navigation";
+import AboutMe from "@pages/AboutMe";
+import HomePage from "@pages/HomePage";
+import NoMachPage from "@pages/NoMachPage";
 import { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
 import "../src/_styles/index.scss";
-import AboutMe from "./pages/AboutMe";
-import HomePage from "./pages/HomePage";
-import NoMachPage from "./pages/NoMachPage";
 
 const App = () => {
   return (

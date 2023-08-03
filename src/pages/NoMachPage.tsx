@@ -1,6 +1,6 @@
+import Container from "@components/layout/Container";
+import CircularButton from "@components/navigation/CircularButton";
 import { useNavigate } from "react-router-dom";
-import Container from "../components/layout/Container";
-import CircularButton from "../components/navigation/CircularButton";
 
 const NoMachPage = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const NoMachPage = () => {
       <h3>
         Oops, we can't seem to find
         <br />
-        the page what are you looking for.
+        the page what you are looking for.
       </h3>
       <p>Don't worry, you can return to the previous page.</p>
       <CircularButton
