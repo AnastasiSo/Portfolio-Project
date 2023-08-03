@@ -3,19 +3,19 @@
   h1 {
     color: transparent;
     font-family: "Inter";
-    font-size: 250px;
+    font-size: $size-unit * 62; // 248px;
     font-style: normal;
     font-weight: 900;
-    line-height: 300px;
-    -webkit-text-stroke-width: 2px;
+    line-height: $size-unit * 75; //300px
+    -webkit-text-stroke-width: $border-unit * 2; // 2px
     -webkit-text-stroke-color: $dark-blue;
   }
   h3 {
     @include h3-font;
   }
   p {
-    margin-top: 12px;
-    margin-bottom: 24px;
+    margin-top: $size-unit * 3; // 12px
+    margin-bottom: $size-unit * 6; // 24px
   }
   .circular-button {
     margin: auto;
