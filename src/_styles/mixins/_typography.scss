@@ -28,6 +28,22 @@
   }
 }
 
+@mixin h1-font-404 {
+  color: transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  line-height: $size-unit * 75; //300px
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $size-unit * 50; // 200px;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: $size-unit * 62; // 248px;
+  }
+}
+
 @mixin h1-font {
   font-family: "Playfair Display";
   font-weight: 600;
