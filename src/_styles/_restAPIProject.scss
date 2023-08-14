@@ -1,0 +1,117 @@
+.rest-api-description {
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 19; // 76px
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $size-unit * 19; // 76px
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $size-unit * 25; // 100px
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: $size-unit * 30; // 120px
+    margin-left: $size-unit * 30; // 120px
+  }
+
+  h3 {
+    @include h3-font;
+  }
+
+  p {
+    margin-top: $size-unit * 4; // 16px
+    @include paragraph-font;
+  }
+}
+
+.rest-api-project {
+  @media (min-width: $breakpoint-md) {
+    margin-left: $size-unit * 30; // 120px
+  }
+
+  form {
+    width: 100%;
+    margin: $size-unit * 6 0; // 24px 0
+    border: $border-unit solid $dark-blue;
+
+    input {
+      width: 80%;
+      padding: $size-unit * 4 $size-unit * 5; // 16px 20px
+    }
+
+    button {
+      width: 20%;
+      height: 100%;
+      border-left: $border-unit solid $dark-blue;
+      padding: $size-unit * 5; // 20px
+    }
+  }
+
+  .rest-api-gallery {
+    height: $size-unit * 111; // 444px
+
+    .column {
+      display: flex;
+      flex-wrap: wrap;
+
+      .first-picture {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 99%;
+        height: 100%;
+      }
+
+      .second-picture,
+      .fourth-picture {
+        align-items: flex-start;
+        height: 98%;
+      }
+
+      .third-picture,
+      .fifth-picture {
+        align-items: flex-end;
+        height: 100%;
+      }
+
+      .second-picture,
+      .third-picture {
+        justify-content: flex-start;
+        width: 98%;
+      }
+
+      .fourth-picture,
+      .fifth-picture {
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
+
+    .green {
+      background-color: $green-40;
+    }
+    .pink {
+      background-color: $pink-60;
+    }
+    .blue {
+      background-color: $blue-80;
+    }
+
+    .rectangle {
+      height: 60%;
+      width: 100%;
+    }
+
+    .square {
+      height: 40%;
+      width: 100%;
+    }
+  }
+
+  .project-technologies {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    @include label-font;
+    margin-top: $size-unit * 6; // 24p
+  }
+}
