@@ -21,15 +21,15 @@ const Menu: FunctionComponent = () => {
           </NavLink>
         </li>
 
-        <li className="menu-items home-page">
-          <NavHashLink to="/#projects" smooth>
-            Projects
+        <li className="menu-items">
+          <NavHashLink to="/#projects" className="menu-link" smooth>
+            <span>Projects</span>
           </NavHashLink>
         </li>
 
         <li className="menu-items">
-          <NavHashLink to="#contacts" smooth>
-            Contacts
+          <NavHashLink to="#contacts" className="menu-link" smooth>
+            <span>Contacts</span>
           </NavHashLink>
         </li>
 
