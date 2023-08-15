@@ -17,13 +17,15 @@ const RestAPI: FunctionComponent = () => {
       <div className="rest-api-project">
         <form>
           <input placeholder="You can start with the word: cat."></input>
-          <button>SEARCH</button>
+          <button>
+            <span>SEARCH</span>
+          </button>
         </form>
         <Row className="rest-api-gallery">
-          <Column size={6}>
+          <Column size={12} sizeSM={6}>
             <div className="green first-picture"></div>
           </Column>
-          <Column size={3}>
+          <Column size={6} sizeSM={3}>
             <div className="rectangle">
               <div className=" pink second-picture gallery-item rectangle-item"></div>
             </div>
@@ -31,7 +33,7 @@ const RestAPI: FunctionComponent = () => {
               <div className="pink third-picture gallery-item square-item"></div>
             </div>
           </Column>
-          <Column size={3}>
+          <Column size={6} sizeSM={3}>
             <div className="square">
               <div className="pink fourth-picture gallery-item square-item"></div>
             </div>

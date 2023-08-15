@@ -44,6 +44,22 @@
       height: 100%;
       border-left: $border-unit solid $dark-blue;
       padding: $size-unit * 5; // 20px
+      transition: all 0.5s ease-out;
+
+      @media (max-width: $breakpoint-sm) {
+        padding: $size-unit * 4 0; // 16px 0
+      }
+
+      span {
+        @include paragraph-font;
+      }
+
+      &:hover {
+        background-color: $dark-blue;
+        span {
+          color: $white-10;
+        }
+      }
     }
   }
 
@@ -84,6 +100,18 @@
         justify-content: flex-end;
         width: 100%;
       }
+
+      @media (max-width: $breakpoint-sm) {
+        .first-picture {
+          width: 100%;
+          height: 99%;
+        }
+
+        .third-picture,
+        .fifth-picture {
+          height: 99%;
+        }
+      }
     }
 
     .green {
@@ -112,6 +140,10 @@
     display: flex;
     justify-content: space-between;
     @include label-font;
-    margin-top: $size-unit * 6; // 24p
+    margin-top: $size-unit * 6; // 24px
+
+    @media (max-width: $breakpoint-sm) {
+      width: 50%;
+    }
   }
 }
