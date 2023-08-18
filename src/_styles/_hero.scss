@@ -12,7 +12,7 @@
   }
 
   .site-description {
-    margin-right: 12px;
+    margin-right: $size-unit * 3; // 12px
     @include paragraph-font;
   }
 
