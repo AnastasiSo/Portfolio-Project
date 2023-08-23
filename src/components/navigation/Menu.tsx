@@ -3,8 +3,6 @@ import { FunctionComponent } from "react";
 import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
-// TODO: Find a solution for the behavior of contacts buttons when the checkout page is active.
-
 const Menu: FunctionComponent = () => (
   <nav className="menu">
     <ul className="menu-wrap">
