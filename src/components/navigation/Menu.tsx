@@ -18,17 +18,18 @@ const Menu: FunctionComponent = () => (
         </NavLink>
       </li>
 
-      <li className="menu-items">
-        <NavHashLink smooth to="/#projects" className="menu-link">
-          Projects
-        </NavHashLink>
-      </li>
+        <li className="menu-items">
+          <NavHashLink to="/#projects" className="menu-link" smooth>
+            <span>Projects</span>
+          </NavHashLink>
+        </li>
 
-      <li className="menu-items">
-        <NavHashLink smooth to="/#contacts" className="menu-link">
-          Contacts
-        </NavHashLink>
-      </li>
+        <li className="menu-items">
+          <NavHashLink to="#contacts" className="menu-link" smooth>
+            <span>Contacts</span>
+          </NavHashLink>
+        </li>
+
 
       <li className="menu-items">
         <a
