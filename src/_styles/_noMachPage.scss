@@ -2,7 +2,6 @@
   text-align: center;
 
   h1 {
-    color: transparent;
     -webkit-text-stroke-width: $border-unit * 2; // 2px
     -webkit-text-stroke-color: $dark-blue;
     @include h1-font-404;
