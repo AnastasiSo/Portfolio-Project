@@ -36,6 +36,7 @@ module.exports = {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
     extensions: [".*", ".js", ".jsx", ".tsx", ".ts"],
     alias: {
+      "@pages": path.join(__dirname, "src", "pages"),
       "@public": path.join(__dirname, "public"),
       "@components": path.join(__dirname, "src", "components"),
     },

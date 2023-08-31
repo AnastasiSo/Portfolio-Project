@@ -81,10 +81,12 @@
     }
   }
   @media (min-width: $breakpoint-lg) {
+
     h1 {
       margin-top: $size-unit * 24; // 96px
     }
     .social-media {
+
       left: $size-unit * 20; // 80px
     }
   }
