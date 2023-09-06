@@ -1,3 +1,4 @@
+import BackgroundSpot from "@components/BackgroundSpot";
 import MainFooter from "@components/footer/MainFooter";
 import Navigation from "@components/navigation/Navigation";
 import AboutMe from "@pages/AboutMe";
@@ -10,6 +11,7 @@ import "../src/_styles/index.scss";
 const App = () => {
   return (
     <Fragment>
+      <BackgroundSpot />
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
