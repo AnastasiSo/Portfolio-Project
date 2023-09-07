@@ -1,11 +1,65 @@
 .pink-spot-menu {
-  width: 616px;
-  height: 417px;
-  filter: blur(150px);
+  width: 60%;
+  height: 50%;
+  filter: blur(100px);
   z-index: -50;
   position: absolute;
   background: #f6e7e3;
-  top: -8px;
+  top: -100px;
   right: 0;
-  border-radius: 0 0 20% 50%;
+  border-radius: 40% 0 50% 50%;
+  transform: skew(-20deg, 20deg);
+}
+
+.blue-spot-project {
+  width: 60%;
+  height: 60%;
+  // filter: blur(100px);
+  z-index: -50;
+  position: absolute;
+  background: #d2e6ea;
+  top: 655px;
+  left: -304px;
+  border-radius: 80% 140% 45% 134%;
+  transform: skew(45deg, 327deg);
+}
+
+.green-spot-restAPI {
+  width: 30%;
+  height: 40%;
+  // filter: blur(100px);
+  z-index: -50;
+  position: absolute;
+  background: #c6e9de;
+  top: 1400px;
+  right: 15%;
+  border-radius: 40% 30% 50% 70%;
+  transform: skew(40deg, 0deg);
+}
+
+.blue-spot-contact {
+  width: 30%;
+  height: 40%;
+  // filter: blur(100px);
+  z-index: -50;
+  position: absolute;
+  background: #d2e6ea;
+  top: 1600px;
+  left: 15%;
+  border-radius: 40% 30% 50% 70%;
+  transform: skew(-54deg, 0deg);
+}
+
+.pink-spot-footer {
+  width: 30%;
+  height: 50%;
+  // filter: blur(100px);
+  z-index: -50;
+  position: absolute;
+  background: #f6e7e3;
+  top: 1700px;
+  right: -10%;
+  bottom: -5%;
+  border-radius: 40% 15% 50% 50%;
+  transform: skew(-51deg, 22deg);
 }

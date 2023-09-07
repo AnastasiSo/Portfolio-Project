@@ -1,27 +1,15 @@
-import { FunctionComponent } from "react";
+import { Fragment, FunctionComponent } from "react";
 
-// type Direction = "left" | "right";
-
-// export interface IBackgroundSpotProps {
-//   direction?: Direction;
-//   className?: string;
-// }
-const BackgroundSpot: FunctionComponent = (
-  {
-    // const BackgroundSpot: FunctionComponent<IBackgroundSpotProps> = ({
-    // direction,
-    // className,
-  }
-) => {
+const BackgroundSpot: FunctionComponent = () => {
   return (
-    <div className="pink-spot-menu">
-      {/* //  {`${direction === "left" ? "direction-left" : ""} ${className}`} */}
-    </div>
+    <Fragment>
+      <div className="pink-spot-menu"></div>
+      <div className="blue-spot-project"></div>
+      <div className="green-spot-restAPI "></div>
+      <div className="blue-spot-contact"></div>
+      <div className="pink-spot-footer"></div>
+    </Fragment>
   );
 };
-
-// BackgroundSpot.defaultProps = {
-//   direction: "right",
-// };
 
 export default BackgroundSpot;
