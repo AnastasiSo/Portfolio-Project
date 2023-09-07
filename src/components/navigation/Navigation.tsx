@@ -8,7 +8,7 @@ import { FunctionComponent } from "react";
 
 const Navigation: FunctionComponent = () => {
   return (
-    <Container className="navigation">
+    <Container className="navigation spot-item1 pink">
       <Row>
         <Column size={6} sizeSM={5} className="logo-wrap">
           <Logo />

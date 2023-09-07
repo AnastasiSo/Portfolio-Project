@@ -1,14 +1,14 @@
 .pink-spot-menu {
   width: 60%;
   height: 50%;
-  filter: blur(100px);
+  // filter: blur(100px);
   z-index: -50;
   position: absolute;
   background: #f6e7e3;
-  top: -100px;
+  top: 0;
   right: 0;
-  border-radius: 40% 0 50% 50%;
-  transform: skew(-20deg, 20deg);
+  border-radius: 40% 15% 50% 50%;
+  transform: skew(-51deg, 22deg);
 }
 
 .blue-spot-project {
@@ -59,7 +59,6 @@
   background: #f6e7e3;
   top: 1700px;
   right: -10%;
-  bottom: -5%;
   border-radius: 40% 15% 50% 50%;
   transform: skew(-51deg, 22deg);
 }
