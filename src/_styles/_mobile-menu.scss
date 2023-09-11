@@ -51,9 +51,9 @@
           .menu-link {
             font-size: 34px;
             font-weight: 600;
-            color: $white-10;
             & > span {
               font-family: "Playfair Display";
+              color: $white-10;
             }
           }
         }
