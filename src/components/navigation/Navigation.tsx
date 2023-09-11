@@ -8,7 +8,7 @@ import { FunctionComponent } from "react";
 
 const Navigation: FunctionComponent = () => {
   return (
-    <Container className="navigation navigation::before">
+    <Container className="navigation">
       <Row>
         <Column size={6} sizeSM={5} className="logo-wrap">
           <Logo />

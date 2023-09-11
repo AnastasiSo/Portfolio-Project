@@ -8,7 +8,7 @@ const NoMachPage = () => {
     navigate(-1);
   };
   return (
-    <Container className="no-mach-page no-mach-page::before">
+    <Container className="no-mach-page">
       <h1>404</h1>
       <h3>
         Oops, we can't seem to find

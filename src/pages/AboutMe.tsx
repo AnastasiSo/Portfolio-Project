@@ -16,7 +16,7 @@ const AboutMe: FunctionComponent<IAboutMeProps> = () => {
       <Container className="about-me">
         <h2>About.</h2>
         <Facts />
-        <div className="about-me-description about-me-description::before">
+        <div className="about-me-description">
           <p>
             Hello! I am interested in working remotely as a Frontend Developer.
             I live in England, Keswick.
