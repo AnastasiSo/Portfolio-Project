@@ -1,4 +1,8 @@
 .footer {
+  position: relative;
+  // overflow: hidden;
+  max-height: 120px;
+
   p {
     @include label-font-sm;
   }
@@ -10,7 +14,7 @@
 
 @media (max-width: $breakpoint-sm) {
   .footer {
-    margin-top: $size-unit * 10; // 40px
+    padding-top: $size-unit * 10; // 40px
 
     .social-media {
       display: none;
@@ -19,12 +23,12 @@
 }
 @media (min-width: $breakpoint-sm) {
   .footer {
-    margin-top: $size-unit * 37; // 148px
+    padding-top: $size-unit * 37; // 148px
   }
 }
 @media (min-width: $breakpoint-md) {
   .footer {
-    margin-top: $size-unit * 23; // 92px
+    padding-top: $size-unit * 23; // 92px
   }
 }
 
@@ -34,8 +38,9 @@
   content: "";
   @include background-spot;
   @include pink-20;
-  @include spot-item1;
-  right: 0;
-  height: 30%;
-  margin-bottom: -10%;
+  @include spot-item4;
+  right: 5%;
+  top: 20%;
+  width: 60%;
+  height: 100%;
 }
