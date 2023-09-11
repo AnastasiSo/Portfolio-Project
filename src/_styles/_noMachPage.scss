@@ -20,3 +20,15 @@
     margin: auto;
   }
 }
+
+//Background spot
+
+.no-mach-page::before {
+  content: "";
+  @include background-spot;
+  @include blue-20;
+  @include spot-item2;
+  width: 50%;
+  top: 50%;
+  left: -15%;
+}

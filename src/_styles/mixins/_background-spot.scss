@@ -1,0 +1,39 @@
+@mixin background-spot {
+  filter: blur(100px);
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  z-index: -50;
+}
+
+@mixin pink-20 {
+  background: $pink-20;
+}
+
+@mixin blue-20 {
+  background: $blue-20;
+}
+
+@mixin green-20 {
+  background: $green-20;
+}
+
+@mixin spot-item1 {
+  border-radius: 40% 15% 50% 50%;
+  transform: skew(-51deg, 22deg);
+}
+
+@mixin spot-item2 {
+  border-radius: 80% 140% 45% 134%;
+  transform: skew(45deg, 327deg);
+}
+
+@mixin spot-item3 {
+  border-radius: 40% 30% 50% 70%;
+  transform: skew(40deg, 0deg);
+}
+
+@mixin spot-item4 {
+  border-radius: 40% 30% 50% 70%;
+  transform: skew(350deg, 0deg);
+}

@@ -5,7 +5,7 @@ import { Fragment, FunctionComponent } from "react";
 const Projects: FunctionComponent = () => {
   return (
     <Fragment>
-      <Container className="projects">
+      <Container className="projects projects::before">
         <h2 id="projects">Projects</h2>
         <Slider />
       </Container>

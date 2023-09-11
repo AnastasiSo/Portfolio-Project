@@ -26,3 +26,14 @@
     }
   }
 }
+
+//Background spot
+
+.projects::before {
+  content: "";
+  @include background-spot;
+  @include blue-20;
+  @include spot-item2;
+  width: 60%;
+  left: -15%;
+}

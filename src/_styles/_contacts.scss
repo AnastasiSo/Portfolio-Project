@@ -112,3 +112,14 @@
     }
   }
 }
+
+//Background spot
+
+.contacts::before {
+  content: "";
+  @include background-spot;
+  @include blue-20;
+  @include spot-item4;
+  left: 20%;
+  height: 40%;
+}

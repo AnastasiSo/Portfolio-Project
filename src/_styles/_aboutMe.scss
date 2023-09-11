@@ -65,3 +65,11 @@
     }
   }
 }
+
+.about-me-description::before {
+  content: "";
+  @include background-spot;
+  @include green-20;
+  @include spot-item4;
+  height: 60%;
+}

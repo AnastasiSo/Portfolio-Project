@@ -27,3 +27,15 @@
     margin-top: $size-unit * 23; // 92px
   }
 }
+
+//Background spot
+
+.footer::before {
+  content: "";
+  @include background-spot;
+  @include pink-20;
+  @include spot-item1;
+  right: 0;
+  height: 30%;
+  margin-bottom: -10%;
+}

@@ -6,7 +6,7 @@ import { FunctionComponent } from "react";
 
 const MainFooter: FunctionComponent = () => {
   return (
-    <Container className="footer">
+    <Container className="footer footer::before">
       <Row>
         <Column size={12} sizeMD={6} sizeSM={6}>
           <p>
