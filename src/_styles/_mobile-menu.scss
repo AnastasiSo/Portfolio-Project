@@ -1,0 +1,79 @@
+// TODO: Add slow text animation for .menu-items
+.mobile-menu-button {
+  color: $dark-blue;
+  cursor: pointer;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  // TODO: Disable scrolling when opening the mobile menu.
+  @media (max-width: $breakpoint-sm) {
+    padding: $size-unit * 7 $size-unit * 4; // 28px 16px
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    z-index: 99;
+
+    & > .row:first-child {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      & > .column {
+        display: flex;
+      }
+
+      & > .column:last-child {
+        justify-content: flex-end;
+      }
+
+      .mobile-menu-close {
+        color: $white-10;
+        cursor: pointer;
+      }
+    }
+
+    .logo svg {
+      fill: $white-10;
+    }
+
+    .menu {
+      display: flex;
+      .menu-wrap {
+        margin-top: $size-unit * 13; // 52px
+        .menu-items {
+          margin-bottom: $size-unit * 4; // 16px
+          .menu-link {
+            font-size: 34px;
+            font-weight: 600;
+            & > span {
+              font-family: "Playfair Display";
+              color: $white-10;
+            }
+          }
+        }
+      }
+    }
+
+    .social-media {
+      margin-right: $size-unit * 3; // 8px
+      margin-top: $size-unit * 8; // 32px
+      & > li {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    &,
+    & > .menu {
+      display: none;
+    }
+  }
+}
