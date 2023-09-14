@@ -37,6 +37,7 @@
     input {
       width: 80%;
       padding: $size-unit * 4 $size-unit * 5; // 16px 20px
+      background-color: transparent;
     }
 
     button {
@@ -146,4 +147,14 @@
       width: 50%;
     }
   }
+}
+
+//Background spot
+
+.rest-api-description::before {
+  content: "";
+  @include background-spot;
+  @include green-20;
+  @include spot-item4;
+  right: 20%;
 }
