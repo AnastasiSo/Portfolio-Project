@@ -162,3 +162,8 @@
   @include spot-item4;
   right: 20%;
 }
+
+.rest-api-description::after {
+  content: "";
+  @include noise;
+}

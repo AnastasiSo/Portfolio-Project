@@ -21,3 +21,10 @@
   top: 0;
   right: 0;
 }
+
+.navigation::after {
+  content: "";
+  @include noise;
+  top: 0;
+  right: 0;
+}

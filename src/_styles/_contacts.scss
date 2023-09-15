@@ -123,3 +123,8 @@
   left: 20%;
   height: 40%;
 }
+
+.contacts::after {
+  content: "";
+  @include noise;
+}

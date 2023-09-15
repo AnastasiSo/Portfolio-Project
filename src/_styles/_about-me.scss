@@ -73,3 +73,8 @@
   @include spot-item4;
   height: 60%;
 }
+
+.about-me-description::after {
+  content: "";
+  @include noise;
+}

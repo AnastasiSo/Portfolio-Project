@@ -32,3 +32,10 @@
   top: 50%;
   left: -15%;
 }
+
+.no-mach-page::after {
+  content: "";
+  @include noise;
+  top: 0;
+  left: 0;
+}
