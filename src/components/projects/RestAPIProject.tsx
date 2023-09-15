@@ -5,7 +5,7 @@ import Row from "../layout/Row";
 
 const RestAPI: FunctionComponent = () => {
   return (
-    <Container>
+    <Container className="rest-api">
       <div className="rest-api-description">
         <h3>Rest API Project</h3>
         <p>

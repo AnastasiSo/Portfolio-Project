@@ -1,3 +1,7 @@
+.rest-api {
+  // TODO: display the component 'RestAPIProject' when the functionality is implemented.
+  display: none;
+}
 .rest-api-description {
   @media (max-width: $breakpoint-sm) {
     margin-top: $size-unit * 19; // 76px
