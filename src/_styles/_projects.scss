@@ -1,4 +1,5 @@
 .projects {
+  position: relative;
   h2 {
     @include h2-font;
     margin-bottom: $size-unit * 6; // 24px
@@ -41,6 +42,6 @@
 .projects::after {
   content: "";
   @include noise;
-  left: 0;
+  top: 0;
   left: -15%;
 }

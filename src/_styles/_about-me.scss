@@ -77,4 +77,6 @@
 .about-me-description::after {
   content: "";
   @include noise;
+  top: 0;
+  left: 0;
 }

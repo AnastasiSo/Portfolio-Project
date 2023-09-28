@@ -48,4 +48,6 @@
 .footer::after {
   content: "";
   @include noise;
+  right: 5%;
+  top: 20%;
 }
