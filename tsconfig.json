@@ -4,6 +4,8 @@
     "module": "ES6",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "types": ["vite/client", "node"],
+    "typeRoots": ["node_modules/@types", "src/types"],
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */ /* Type declaration files to be included in compilation. */,
 
     "jsx": "preserve",

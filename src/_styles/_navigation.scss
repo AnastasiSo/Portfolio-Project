@@ -8,3 +8,23 @@
     display: flex;
   }
 }
+
+//Background spot
+
+.navigation::before {
+  content: "";
+  @include background-spot;
+  @include pink-20;
+  @include spot-item1;
+  width: 60%;
+  height: 40%;
+  top: 0;
+  right: 0;
+}
+
+.navigation::after {
+  content: "";
+  @include noise;
+  top: 0;
+  right: 0;
+}

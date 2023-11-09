@@ -1,5 +1,6 @@
 import Container from "@components/layout/Container";
 import CircularButton from "@components/navigation/CircularButton";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NoMachPage = () => {
@@ -7,6 +8,14 @@ const NoMachPage = () => {
   const handleScrollToHomePage = () => {
     navigate(-1);
   };
+
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, []);
+
   return (
     <Container className="no-mach-page">
       <h1>404</h1>
