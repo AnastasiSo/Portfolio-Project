@@ -1,9 +1,27 @@
 import Container from "@components/layout/Container";
-import { FunctionComponent } from "react";
-import Column from "../layout/Column";
-import Row from "../layout/Row";
+import { FunctionComponent, createContext, useState } from "react";
+import useAxios from "../../../hooks/useAxios";
+import ImagesGallery from "./ImagesGallery";
+import SearchField from "./SearchField";
+
+// Create context
+export const ImageContext = createContext();
 
 const RestAPI: FunctionComponent = () => {
+  const [searchImage, setSearchImage] = useState("");
+  const { response, isLoading, error, fetchData } = useAxios(
+    `search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_ACCESS_KEY}`
+  );
+
+  const value = {
+    response,
+    isLoading,
+    error,
+    fetchData,
+    searchImage,
+    setSearchImage,
+  };
+
   return (
     <Container className="rest-api">
       <div className="rest-api-description">
@@ -15,13 +33,11 @@ const RestAPI: FunctionComponent = () => {
         </p>
       </div>
       <div className="rest-api-project">
-        <form>
-          <input placeholder="You can start with the word: cat."></input>
-          <button>
-            <span>SEARCH</span>
-          </button>
-        </form>
-        <Row className="rest-api-gallery">
+        <ImageContext.Provider value={value}>
+          <SearchField />
+          <ImagesGallery />
+        </ImageContext.Provider>
+        {/* <Row className="rest-api-gallery">
           <Column size={12} sizeSM={6}>
             <div className="green first-picture"></div>
           </Column>
@@ -41,7 +57,7 @@ const RestAPI: FunctionComponent = () => {
               <div className="blue fifth-picture gallery-item rectangle-item"></div>
             </div>
           </Column>
-        </Row>
+        </Row> */}
         <p className="project-technologies">
           <span>HTML & CSS</span>
           <span>Java Script</span>

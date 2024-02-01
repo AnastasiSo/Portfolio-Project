@@ -1,7 +1,7 @@
 import Contacts from "@components/Contacts";
 import Hero from "@components/Hero";
 import Projects from "@components/projects/Projects";
-import RestAPI from "../components/projects/RestAPIProject";
+import RestAPI from "../components/projects/RestAPIProject/RestAPI";
 
 const HomePage = () => {
   return (

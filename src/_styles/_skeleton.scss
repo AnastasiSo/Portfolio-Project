@@ -1,0 +1,10 @@
+.skeleton-items {
+  transform: scale(1);
+  animation: pulse 2s infinite;
+
+  .skeleton-item {
+    background-color: $grey-20;
+    height: 72px;
+    border-radius: 50px;
+  }
+}

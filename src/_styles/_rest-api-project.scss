@@ -1,6 +1,6 @@
 .rest-api {
-  // TODO: display the component 'RestAPIProject' when the functionality is implemented.
-  display: none;
+  //   // TODO: display the component 'RestAPIProject' when the functionality is implemented.
+  //   display: none;
 }
 .rest-api-description {
   @media (max-width: $breakpoint-sm) {
@@ -70,6 +70,12 @@
 
   .rest-api-gallery {
     height: $size-unit * 111; // 444px
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
 
     .column {
       display: flex;
