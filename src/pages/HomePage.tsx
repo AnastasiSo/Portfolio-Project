@@ -1,14 +1,14 @@
 import Contacts from "@components/Contacts";
 import Hero from "@components/Hero";
 import Projects from "@components/projects/Projects";
-import RestAPI from "../components/projects/RestAPIProject";
+import APIProject from "../components/projects/API Project/ApiProject";
 
 const HomePage = () => {
   return (
     <div className="home-page">
       <Hero />
       <Projects />
-      <RestAPI />
+      <APIProject />
       <Contacts />
     </div>
   );
