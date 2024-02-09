@@ -1,8 +1,8 @@
-.rest-api {
+.api-gallery-project {
   // TODO: display the component 'RestAPIProject' when the functionality is implemented.
   // display: none;
 }
-.rest-api-description {
+.api-description {
   @media (max-width: $breakpoint-sm) {
     margin-top: $size-unit * 19; // 76px
   }
@@ -28,7 +28,7 @@
   }
 }
 
-.rest-api-project {
+.api-project {
   @media (min-width: $breakpoint-md) {
     margin-left: $size-unit * 30; // 120px
   }
@@ -68,7 +68,7 @@
     }
   }
 
-  .rest-api-gallery {
+  .api-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -102,7 +102,7 @@
 
 //Background spot
 
-.rest-api-description::before {
+.api-description::before {
   content: "";
   @include background-spot;
   @include green-20;
@@ -110,7 +110,8 @@
   right: 20%;
 }
 
-.rest-api-description::after {
+.api-description::after {
   content: "";
   @include noise;
+  margin-top: -20%;
 }

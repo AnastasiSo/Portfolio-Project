@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FunctionComponent, Key, useRef, useState } from "react";
+import { FunctionComponent, Key, useEffect, useRef, useState } from "react";
 const API_URL = "https://api.unsplash.com/search/photos";
 const REACT_API_KEY = "UCnponr8TqMg0f4R0j2tYI5xpONs6HwdtccnCw8FVNY";
 
@@ -7,13 +7,16 @@ const SearchField: FunctionComponent = () => {
   const searchInput = useRef(null);
   const [images, setImages] = useState([]);
   const [errorMsg, setErrorMsg] = useState("");
+  useEffect(() => {
+    fetchImages("work");
+  }, []);
 
-  const fetchImages = async () => {
+  const fetchImages = async (searchQuery: string) => {
     try {
-      if (searchInput.current.value) {
+      if (searchQuery) {
         setErrorMsg("");
         const { data } = await axios.get(
-          `${API_URL}?query=${searchInput.current.value}&per_page=6&client_id=${REACT_API_KEY}`
+          `${API_URL}?query=${searchQuery}&per_page=6&client_id=${REACT_API_KEY}`
         );
         setImages(data.results);
       }
@@ -25,10 +28,11 @@ const SearchField: FunctionComponent = () => {
 
   const handlerSearch = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    fetchImages();
+
+    fetchImages(searchInput.current.value);
   };
   return (
-    <div className="rest-api-project">
+    <div className="api-project">
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
       <form onSubmit={handlerSearch}>
         <input
@@ -40,7 +44,7 @@ const SearchField: FunctionComponent = () => {
           <span>SEARCH</span>
         </button>
       </form>
-      <div className="rest-api-gallery">
+      <div className="api-gallery">
         {images.map(
           (image: {
             id: Key;
