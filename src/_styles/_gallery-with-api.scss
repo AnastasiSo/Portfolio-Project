@@ -33,10 +33,13 @@
     }
 
     .api-search {
+      width: 100%;
+
       .api-search-form {
         width: 100%;
         margin: $size-unit * 6 0; // 24px 0
         border: $border-unit solid $dark-blue;
+
         input {
           width: 80%;
           padding: $size-unit * 4 $size-unit * 5; // 16px 20px
@@ -63,10 +66,6 @@
             span {
               color: $white-10;
             }
-          }
-
-          @media (max-width: $breakpoint-lg) {
-            width: 40%;
           }
         }
       }
