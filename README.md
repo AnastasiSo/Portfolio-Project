@@ -1,4 +1,5 @@
 # Portfolio-Project
+## Deployment [Here](https://superb-phoenix-5608ef.netlify.app/).
 
 Goal:
 
@@ -62,15 +63,14 @@ To run app use
 - [x] Testing.
 - [x] Deployment MVP. [Here](https://superb-phoenix-5608ef.netlify.app/).
 
-## Stage 4 | **April 2023 - now**
-- [ ] Development of version 1.0
-- [ ] Testing
-- [ ] Deployment
+## Stage 4 |✔| **April 2023 - December 2023**
+- [x] Development of version 1.0
+- [x] Testing
+- [x] Deployment [Here](https://superb-phoenix-5608ef.netlify.app/).
 - [ ] Description of tasks and expectations from the final result of version 2.0
 
-## Stage 5
+## Stage 5 | **January 2024 - now**
 - [ ] Development of version 2.0.
 - [ ] Code optimization.
-- [ ] Execution of all ToDos left in the comments
-- [ ] Add story book.
+- [ ] Execution of all ToDo`s left in the comments
 - [ ] Deployment.
