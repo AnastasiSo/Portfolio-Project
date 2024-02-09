@@ -32,9 +32,9 @@ const SearchField: FunctionComponent = () => {
     fetchImages(searchInput.current.value);
   };
   return (
-    <div className="api-project">
+    <div className="api-search">
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
-      <form onSubmit={handlerSearch}>
+      <form className="api-search-form" onSubmit={handlerSearch}>
         <input
           type="search"
           placeholder="You can start with the word: cat."
@@ -44,7 +44,7 @@ const SearchField: FunctionComponent = () => {
           <span>SEARCH</span>
         </button>
       </form>
-      <div className="api-gallery">
+      <div className="api-search-gallery">
         {images.map(
           (image: {
             id: Key;

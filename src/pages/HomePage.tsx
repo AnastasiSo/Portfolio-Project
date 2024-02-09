@@ -1,14 +1,14 @@
 import Contacts from "@components/Contacts";
 import Hero from "@components/Hero";
 import Projects from "@components/projects/Projects";
-import APIProject from "../components/projects/API Project/ApiProject";
+import GalleryWithAPI from "@components/projects/api/GalleryWithAPI";
 
 const HomePage = () => {
   return (
     <div className="home-page">
       <Hero />
       <Projects />
-      <APIProject />
+      <GalleryWithAPI />
       <Contacts />
     </div>
   );

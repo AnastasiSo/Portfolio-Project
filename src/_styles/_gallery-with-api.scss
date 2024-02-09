@@ -1,0 +1,116 @@
+.api-gallery {
+  .project-description {
+    @media (max-width: $breakpoint-sm) {
+      margin-top: $size-unit * 19; // 76px
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      margin-top: $size-unit * 19; // 76px
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      margin-top: $size-unit * 25; // 100px
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin-top: $size-unit * 30; // 120px
+      margin-left: $size-unit * 30; // 120px
+    }
+
+    h3 {
+      @include h3-font;
+    }
+
+    p {
+      margin-top: $size-unit * 4; // 16px
+      @include paragraph-font;
+    }
+  }
+
+  .api-gallery-project {
+    @media (min-width: $breakpoint-md) {
+      margin-left: $size-unit * 30; // 120px
+    }
+
+    .api-search {
+      .api-search-form {
+        width: 100%;
+        margin: $size-unit * 6 0; // 24px 0
+        border: $border-unit solid $dark-blue;
+        input {
+          width: 80%;
+          padding: $size-unit * 4 $size-unit * 5; // 16px 20px
+          background-color: transparent;
+        }
+
+        button {
+          width: 20%;
+          height: 100%;
+          border-left: $border-unit solid $dark-blue;
+          padding: $size-unit * 5; // 20px
+          transition: all 0.5s ease-out;
+
+          @media (max-width: $breakpoint-sm) {
+            padding: $size-unit * 4 0; // 16px 0
+          }
+
+          span {
+            @include paragraph-font;
+          }
+
+          &:hover {
+            background-color: $dark-blue;
+            span {
+              color: $white-10;
+            }
+          }
+
+          @media (max-width: $breakpoint-lg) {
+            width: 40%;
+          }
+        }
+      }
+
+      .api-search-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .image {
+          width: 30%;
+          border-radius: $size-unit * 5; // 20px
+          margin-bottom: $size-unit * 5; // 20px
+        }
+      }
+    }
+  }
+
+  .project-technologies {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    @include label-font;
+    margin-top: $size-unit * 6; // 24px
+
+    @media (max-width: $breakpoint-sm) {
+      width: 50%;
+    }
+  }
+}
+
+//Background spot
+
+.project-description::before {
+  content: "";
+  @include background-spot;
+  @include green-20;
+  @include spot-item4;
+  right: 20%;
+}
+
+.project-description::after {
+  content: "";
+  @include noise;
+  margin-top: -20%;
+}
