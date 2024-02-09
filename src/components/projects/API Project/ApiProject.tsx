@@ -18,6 +18,7 @@ const APIProject: FunctionComponent = () => {
         <p className="project-technologies">
           <span>HTML & CSS</span>
           <span>Java Script</span>
+          <span>API</span>
         </p>
       </div>
     </Container>

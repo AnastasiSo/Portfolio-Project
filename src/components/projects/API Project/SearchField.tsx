@@ -2,6 +2,7 @@ import axios from "axios";
 import { FunctionComponent, Key, useRef, useState } from "react";
 const API_URL = "https://api.unsplash.com/search/photos";
 const REACT_API_KEY = "UCnponr8TqMg0f4R0j2tYI5xpONs6HwdtccnCw8FVNY";
+
 const SearchField: FunctionComponent = () => {
   const searchInput = useRef(null);
   const [images, setImages] = useState([]);
@@ -24,7 +25,6 @@ const SearchField: FunctionComponent = () => {
 
   const handlerSearch = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    console.log(searchInput.current.value);
     fetchImages();
   };
   return (
@@ -40,7 +40,7 @@ const SearchField: FunctionComponent = () => {
           <span>SEARCH</span>
         </button>
       </form>
-      <div className="images">
+      <div className="rest-api-gallery">
         {images.map(
           (image: {
             id: Key;
@@ -59,4 +59,5 @@ const SearchField: FunctionComponent = () => {
     </div>
   );
 };
+
 export default SearchField;
