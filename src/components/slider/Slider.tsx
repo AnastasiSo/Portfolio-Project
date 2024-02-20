@@ -82,6 +82,8 @@ const Slider: FunctionComponent = () => {
   return (
     <Fragment>
       <div className="slider">
+        {/* TODO: Fix: slider scroll left/right in mobile version. */}
+
         <CircularButton
           direction="left"
           handlerOnClick={() => goToPrevious(currentIndex)}
