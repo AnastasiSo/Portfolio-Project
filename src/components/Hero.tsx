@@ -4,6 +4,7 @@ import Row from "@components/layout/Row";
 import SocialMedia from "@components/navigation/SocialMedia";
 import avatar from "@public/assets/avatar.png";
 import { FunctionComponent } from "react";
+import Earring from "./Earring";
 
 const Hero: FunctionComponent = () => {
   return (
@@ -27,6 +28,7 @@ const Hero: FunctionComponent = () => {
         <Column size={7}>
           <div className="avatar">
             <img src={avatar}></img>
+            <Earring />
           </div>
         </Column>
       </Row>

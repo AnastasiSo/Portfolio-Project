@@ -1,0 +1,48 @@
+.earring {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 62%;
+  color: $blue;
+  z-index: -20;
+
+  @media (max-width: $breakpoint-sm) {
+    right: -46%;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    right: -34%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    right: 0;
+  }
+
+  p {
+    height: $size-unit * 50; // 200px
+    width: $size-unit * 50; // 200px
+    position: relative;
+    animation: effect 8s linear infinite;
+  }
+
+  @keyframes effect {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 $size-unit * 25; // 0 100px
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: $blue;
+    @include label-font;
+  }
+}
