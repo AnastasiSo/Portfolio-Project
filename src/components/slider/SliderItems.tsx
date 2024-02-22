@@ -7,7 +7,7 @@ export interface ISliderItemsProps {
     card: {
       title: string;
       description: string;
-      codePen: string;
+      preview: string;
       github: string;
     };
   }>;
