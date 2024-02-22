@@ -4,8 +4,9 @@ export interface ICardProps {
   data: {
     title: string;
     description: string;
-    codePen: string;
+    preview: string;
     github: string;
+    technologies?: string;
   };
 }
 
@@ -22,14 +23,15 @@ const Card: FunctionComponent<ICardProps> = ({ data }) => {
             Git Hub
           </a>
           &nbsp;or view project on&nbsp;
-          <a className="card-link" href={data.codePen} target="blank">
-            CodePen
+          <a className="card-link" href={data.preview} target="blank">
+            Preview
           </a>
           .
         </p>
         <p className="card-caption">TECHNOLOGIES USED</p>
         <p className="card-technologies">
           HTML & CSS <span>Java Script</span>
+          <span>{data.technologies}</span>
         </p>
       </div>
     </div>

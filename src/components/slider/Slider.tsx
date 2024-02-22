@@ -1,5 +1,6 @@
 import CircularButton from "@components/navigation/CircularButton";
 import SliderItems from "@components/slider/SliderItems";
+import projectHtmlCssMarkup from "@public/assets/projects/html_css_markup.jpg";
 import projectBoardImg from "@public/assets/projects/projectBoard.gif";
 import projectCardImg from "@public/assets/projects/projectCards.gif";
 import projectDragDropImg from "@public/assets/projects/projectDragDrop.gif";
@@ -16,8 +17,20 @@ const Slider: FunctionComponent = () => {
         title: "Cards",
         description:
           "This Cards-slider with clickable images. When clicked, the image enlarges.",
-        codePen: "https://codepen.io/AnastasiiaSorina/pen/yLxPMLv",
+        preview: "https://codepen.io/AnastasiiaSorina/pen/yLxPMLv",
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-Cards",
+      },
+    },
+    {
+      url: projectHtmlCssMarkup,
+      title: "Html Css Markup",
+      card: {
+        title: "Html Css Markup",
+        description:
+          "The website layout is adaptively designed for mobile and intermediate screens using a component-based approach. Components adjust seamlessly to different screen sizes, optimizing navigation, content, images, and interactions.",
+        preview: "https://sparkly-bublanina-2feada.netlify.app/",
+        github: "https://github.com/AnastasiiaSorina/html-css-markup",
+        technologies: "React TypeScript",
       },
     },
     {
@@ -27,7 +40,7 @@ const Slider: FunctionComponent = () => {
         title: "Drag & Drop",
         description:
           "Implemented the ability to drag the block to one of the three columns.",
-        codePen: "https://codepen.io/AnastasiiaSorina/pen/qBMVrdG",
+        preview: "https://codepen.io/AnastasiiaSorina/pen/qBMVrdG",
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-DragDrop ",
       },
     },
@@ -37,7 +50,7 @@ const Slider: FunctionComponent = () => {
       card: {
         title: "Slider",
         description: "Slider with beautiful animation.",
-        codePen: "https://codepen.io/AnastasiiaSorina/pen/VwGrpeY",
+        preview: "https://codepen.io/AnastasiiaSorina/pen/VwGrpeY",
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-Slider ",
       },
     },
@@ -48,7 +61,7 @@ const Slider: FunctionComponent = () => {
         title: "Board",
         description:
           "A board that reacts to cursor movement. And randomly alternates color. Decorated with smooth animation.",
-        codePen: "https://codepen.io/AnastasiiaSorina/pen/mdGqWWr",
+        preview: "https://codepen.io/AnastasiiaSorina/pen/mdGqWWr",
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-Board",
       },
     },
@@ -59,7 +72,7 @@ const Slider: FunctionComponent = () => {
         title: "Game",
         description:
           "Game: the goal of which is to click on the maximum possible number of randomly pop-up circles. For the time you choose. You can choose the game time 10, 20, 30 seconds. At the end of your time, the score of the game will be waiting for you.",
-        codePen: "https://codepen.io/AnastasiiaSorina/pen/WNgXpjd",
+        preview: "https://codepen.io/AnastasiiaSorina/pen/WNgXpjd",
         github: "https://github.com/AnastasiiaSorina/JS-Challenge-Game ",
       },
     },
